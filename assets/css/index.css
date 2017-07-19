@@ -88,5 +88,6 @@ hr{
     font-weight: bolder;
     text-align: center;
     padding: 15px;
+    clear: both;
 
 }

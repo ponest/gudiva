@@ -7,7 +7,7 @@
  */
 ?>
 <head>
-    <link rel="stylesheet" href="assets/css/admin.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/login.css" type="text/css">
     <style>
         td>.btn{
             margin: 1px;

@@ -7,7 +7,7 @@
  */
 ?>
 <head>
-    <link rel="stylesheet" href="assets/css/admin.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/login.css" type="text/css">
 </head>
 <div id="page-wrapper">
     <div class="row first">

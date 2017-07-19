@@ -3,7 +3,7 @@
  */
 $(document).ready(function () {
     $("#register").click(function () {
-        $("#form").load('registration_view.php')
+        $("#form").load('registration.php')
     })
 });
 /*====panel javascript=======*/
