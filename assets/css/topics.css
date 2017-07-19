@@ -1,0 +1,71 @@
+body{
+    background-color: lightgray;
+    overflow-x: hidden;
+
+}
+
+#first-row{
+    font-family: "Tibetan Machine Uni",sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: white;
+}
+.navbar-default{
+    background: black;
+}
+hr{
+    margin-left: 30px;
+    margin-top: 0;
+    display: block;
+    height: 3px;
+    background-color:white;
+}
+#content{
+    margin-top: -20px;
+    margin-right: 20px;
+}
+.search-btn,.search-btn:hover{
+    font-family: Cambria;
+    color:white;
+    font-weight:900;
+    background-color: #3c8eff;
+}
+.start_btn, .start_btn:hover{
+    background-color: #3c8eff;
+    color: white;
+    font-family: Cambria;
+    font-weight: 600;
+}
+.upper-part img{
+    height: 150px;
+    width:100%;
+}
+.lower-part{
+    position: relative;
+    padding: 15px 15px 20px;
+    height: 200px;
+    font-family: Cambria;
+
+}
+.lower-part h4{
+    font-weight: 600;
+}
+.lower-part p{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.content{
+    margin-top:40px;
+}
+.row{
+    padding: 0 10px;
+}
+.clickable{
+    cursor: pointer;
+}
+
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}

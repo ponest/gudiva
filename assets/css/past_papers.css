@@ -1,0 +1,29 @@
+body{
+    background-color: white;
+    overflow-x: hidden;
+
+}
+hr{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0;
+    display: block;
+    height: 2px;
+    background-color: #3c8eff;
+}
+.search-btn,.search-btn:hover{
+    font-family: Cambria;
+    color:white;
+    font-weight:900;
+    background-color: #3c8eff;
+    margin-right: 30px;
+}
+.second{
+    margin-right: 10%;
+    margin-left: 10%;
+    font-family: Cambria;
+    font-size: 14px;
+}
+.second a:hover{
+    text-decoration: none;
+}

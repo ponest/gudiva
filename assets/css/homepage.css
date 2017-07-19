@@ -1,0 +1,71 @@
+@font-face {
+    font-family: merifont;
+    src: url("../fonts/Merriweather-Bold.ttf");
+}
+@font-face {
+    font-family: firasans;
+    src: url("../fonts/Firasans-Bold.otf");
+}
+.navbar{
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: lightgray;
+    font-family: Cambria,sans-serif;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.63);
+}
+#brand_name p{
+    float: left;
+padding: 10px 0 0 20px;
+    font-size: 25px;
+}
+#top-menus{
+    margin-top: 20px;
+    float: right;
+}
+#top-menus span{
+    padding: 30px 20px 10px 0;
+    font-size: 16px;
+}
+#content_image img{
+    width: 100%;
+    height: 91vh;
+}
+#content_image::after{
+    content: "";
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    width: 100%;
+    height: 91vh;
+    background-color:black;
+    opacity: 0.4;
+    z-index: 3;
+}
+#center_contents{
+    z-index: 6;
+    position: absolute;
+    top: 48vh;
+    left: 30%;
+    width: 40%;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+hr{
+    margin-top:3vh;
+    height: 3px;
+    color: white;
+}
+#center_contents span{
+    width: 50%;
+    height: 2vh;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.63);
+    padding: 10px 20px 10px 20px;
+    font-family: Cambria,sans-serif;
+    font-size: 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
