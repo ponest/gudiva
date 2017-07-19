@@ -1,13 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller'] = 'authentication';
+$route['default_controller'] = 'init';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /* =======authentication=========*/
 
-$route['login'] = 'authentication/index';
 $route['register'] = 'authentication/registration';
 $route['new_student'] = 'authentication/new_student_registration';
 $route['student'] = 'authentication/student_login_process';
@@ -25,6 +24,8 @@ $route['alevel_topics']='init/alevel_topics';
 $route['start-topic']='init/start_topic';
 $route['olevel_pp']='init/olevel_pp';
 $route['alevel_pp']='init/alevel_pp';
+$route['login']='init/login';
+$route['register']='init/register';
 
 /*===========dashboard for students=========*/
 

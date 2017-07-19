@@ -11,6 +11,9 @@ Class Init extends CI_Controller
     {
         parent::__construct();
     }
+    public function index(){
+        $this->load->view('index');
+    }
     public function olevel_page(){
         $this->load->view('student/header');
         $this->load->view('student/O_level');
@@ -38,6 +41,10 @@ Class Init extends CI_Controller
     public function alevel_pp(){
         $this->load->view('student/header');
         $this->load->view('student/A_level_past_papers');
+    }
+    public function login(){
+        $this->load->view('student/header');
+        $this->load->view('login_view');
     }
 
 }
