@@ -6,8 +6,8 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /* =======authentication=========*/
-
-$route['register'] = 'authentication/registration';
+$route['login'] = 'auth/index';
+$route['register'] = 'auth/register';
 $route['new_student'] = 'authentication/new_student_registration';
 $route['student'] = 'authentication/student_login_process';
 $route['home'] = 'authentication/home';
@@ -24,8 +24,8 @@ $route['alevel_topics']='init/alevel_topics';
 $route['start-topic']='init/start_topic';
 $route['olevel_pp']='init/olevel_pp';
 $route['alevel_pp']='init/alevel_pp';
-$route['login']='init/login';
-$route['register']='init/register';
+//$route['login']='init/login';
+//$route['register']='init/register';
 
 /*===========dashboard for students=========*/
 
