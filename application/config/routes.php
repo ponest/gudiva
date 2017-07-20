@@ -6,8 +6,10 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /* =======authentication=========*/
-$route['login'] = 'auth/index';
-$route['register'] = 'auth/register';
+$route['auth'] = 'auth/index';
+$route['auth/login'] = 'auth/login';
+$route['auth/logout'] = 'auth/logout';
+$route['auth/signup'] = 'auth/register';
 $route['new_student'] = 'authentication/new_student_registration';
 $route['student'] = 'authentication/student_login_process';
 $route['home'] = 'authentication/home';

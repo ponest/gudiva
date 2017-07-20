@@ -17,11 +17,11 @@
         <meta name="author" content="">
 
         <title>GUDIVA-Online Library</title>
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/index.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/login.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/register.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/index.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/login.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/register.css" rel="stylesheet" type="text/css">
 <!--        <link href="assets/css/topics.css" rel="stylesheet" type="text/css">-->
 
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -40,7 +40,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <div class="navbar-brand"><img class="logo" src="assets/images/logo.png" style="height:5vh; width: 120%"></div>
+                        <div class="navbar-brand"><img class="logo" src="../assets/images/logo.png" style="height:5vh; width: 120%"></div>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,9 +65,9 @@
                             <li><a href="#" style="color: white">Forum</a></li>
                             <li><a href="#" style="color: white">Chat</a></li>
                         </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#" style="color: white">Logout</a></li>
-                        </ul>
+<!--                        <ul class="nav navbar-nav navbar-right">-->
+<!--                            <li><a href="--><?//=  base_url('auth/logout')?><!--" style="color: white"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>-->
+<!--                        </ul>-->
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>

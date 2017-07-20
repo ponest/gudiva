@@ -54,8 +54,8 @@
                         <li><a href="#" style="color: white">Chat</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="login" style="color: white">Login</a></li>
-                        <li><a href="register" style="color: white">Register</a></li>
+                        <li><a href="auth/login" style="color: white">Login</a></li>
+                        <li><a href="auth/signup" style="color: white">Register</a></li>
 
                     </ul>
                 </div><!-- /.navbar-collapse -->
