@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: KILENGA
- * Date: 3/29/2017
- * Time: 2:40 PM
- */
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,81 +9,176 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin</title>
+    <title>SB Admin - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/metisMenu.min.css" rel="stylesheet">
-    <link href="assets/css/gudiva.css" rel="stylesheet">
-    <link href="assets/css/morris.css" rel="stylesheet">
+    <link href="assets/css/admin/dataTables.bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/admin/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="assets/css/admin/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
+
 <div id="wrapper">
+
     <!-- Navigation -->
-    <nav class="navbar navbar-static-top " role="navigation" style="margin-bottom: 0;background-color: rgba(202, 25, 85, 0.82);">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span class="navbar-brand" style="color: white; font-family: Cambria,sans-serif; font-weight: 900">Gudiva Online Library</span>
+            <a class="navbar-brand" href="" style="color: white">Gudiva Online Library</a>
         </div>
-        <div><a href="#" class="pull-right" style="color: white; font-size:18px;text-decoration: none; font-family: Cambria,sans-serif; font-weight: 900; padding:10px 20px 0 0;">Logout</a></div>
-        <!-- /.navbar-header -->
-        <!-- /.navbar-top-links -->
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
-                <ul class="nav" id="side-menu">
-                    <li>
-                        <a href="admin_dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                <ul class="dropdown-menu message-dropdown">
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>John Smith</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#"><i class="fa fa-book fa-fw"></i>&nbsp;Topics<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="o_level_topics">O Level</a>
-                            </li>
-                            <li>
-                                <a href="a_level_topics">A level</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>John Smith</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
                     </li>
-                    <li>
-                        <a href="tips"><i class="fa fa-edit fa-fw"></i>Educational Tips</a>
+                    <li class="message-preview">
+                        <a href="#">
+                            <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>John Smith</strong>
+                                    </h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Past Papers<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="o_level_past_papers">O level</a>
-                            </li>
-                            <li>
-                                <a href="a_level_past_papers">A level</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>Questions<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="o_level_questions">O Level</a>
-                            </li>
-                            <li>
-                                <a href="a_level_questions">A level</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
+                    <li class="message-footer">
+                        <a href="#">Read All New Messages</a>
                     </li>
                 </ul>
-            </div>
-            <!-- /.sidebar-collapse -->
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                <ul class="dropdown-menu alert-dropdown">
+                    <li>
+                        <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">View All</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li class="active">
+                    <a href="dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="topics"><i class="fa fa-fw fa-book"></i>Topics</a>
+                </li>
+                <li>
+                    <a href="questions"><i class="fa fa-fw fa-book"></i>Questions</a>
+                </li>
+                <li>
+                    <a href="edu-tips"><i class="fa fa-fw fa-briefcase"></i>Tips</a>
+                </li>
+                 <li>
+                    <a href="past-papers"><i class="fa fa-fw fa-paperclip"></i>Past Papers</a>
+                </li>
+                 <li>
+                    <a href="edu-tips"><i class="fa fa-fw fa-user"></i>Users</a>
+                </li>
+                 <li>
+                    <a href="edu-tips"><i class="fa fa-fw fa-user-plus"></i>User Groups</a>
+                </li>
+
+            </ul>
         </div>
-        <!-- /.navbar-static-side -->
+        <!-- /.navbar-collapse -->
     </nav>
-</body>
-</html>
+    <div id="page-wrapper">
+
+        <div class="container-fluid">

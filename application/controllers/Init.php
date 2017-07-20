@@ -42,4 +42,30 @@ Class Init extends CI_Controller
         $this->load->view('student/header');
         $this->load->view('student/A_level_past_papers');
     }
+    public function dashboard(){
+        $this->load->view('admin/header');
+        $this->load->view('admin/content');
+        $this->load->view('admin/footer');
+    }
+    public function topics(){
+        $this->load->view('admin/header');
+        $this->load->view('admin/topics');
+        $this->load->view('admin/footer');
+    }
+     public function questions(){
+        $this->load->view('admin/header');
+        $this->load->view('admin/questions');
+        $this->load->view('admin/footer');
+    }
+     public function tips(){
+        $this->load->view('admin/header');
+        $this->load->view('admin/tips');
+        $this->load->view('admin/footer');
+    }
+     public function past_papers(){
+            $this->load->view('admin/header');
+            $this->load->view('admin/past_papers');
+            $this->load->view('admin/footer');
+        }
+
 }

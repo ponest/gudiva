@@ -31,6 +31,14 @@ body{
     background-color:black;
     opacity: 0.5;
 }
+@media screen and (max-width: 420px) and (min-width: 320px) {
+.center_contents{
+    display: none;
+}
+    #second-row::after{
+        display: none;
+    }
+}
 .center_contents{
     z-index: 6;
     position:absolute;

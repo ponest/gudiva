@@ -27,6 +27,12 @@ $route['alevel_topics']='init/alevel_topics';
 $route['start-topic']='init/start_topic';
 $route['olevel_pp']='init/olevel_pp';
 $route['alevel_pp']='init/alevel_pp';
+$route['dashboard']='init/dashboard';
+$route['topics']='init/topics';
+$route['questions']='init/questions';
+$route['edu-tips']='init/tips';
+$route['past-papers']='init/past_papers';
+
 //$route['login']='init/login';
 //$route['auth/signup']='init/register';
 
