@@ -65,9 +65,10 @@
                             <li><a href="#" style="color: white">Forum</a></li>
                             <li><a href="#" style="color: white">Chat</a></li>
                         </ul>
-<!--                        <ul class="nav navbar-nav navbar-right">-->
-<!--                            <li><a href="--><?//=  base_url('auth/logout')?><!--" style="color: white"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>-->
-<!--                        </ul>-->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="login" style="color: white">Login</a></li>
+                            <li><a href="signup" style="color: white">Register</a></li>
+                        </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>

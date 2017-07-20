@@ -9,7 +9,8 @@ $route['translate_uri_dashes'] = FALSE;
 $route['auth'] = 'auth/index';
 $route['auth/login'] = 'auth/login';
 $route['auth/logout'] = 'auth/logout';
-$route['auth/signup'] = 'auth/register';
+$route['auth/signup']='auth/signup';
+$route['auth/register'] = 'auth/register';
 $route['new_student'] = 'authentication/new_student_registration';
 $route['student'] = 'authentication/student_login_process';
 $route['home'] = 'authentication/home';
@@ -27,7 +28,7 @@ $route['start-topic']='init/start_topic';
 $route['olevel_pp']='init/olevel_pp';
 $route['alevel_pp']='init/alevel_pp';
 //$route['login']='init/login';
-//$route['register']='init/register';
+//$route['auth/signup']='init/register';
 
 /*===========dashboard for students=========*/
 

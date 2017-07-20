@@ -62,9 +62,6 @@
                         <li><a href="#" style="color: white">Forum</a></li>
                         <li><a href="#" style="color: white">Chat</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" style="color: white">Logout</a></li>
-                    </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>

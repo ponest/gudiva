@@ -42,9 +42,4 @@ Class Init extends CI_Controller
         $this->load->view('student/header');
         $this->load->view('student/A_level_past_papers');
     }
-    public function login(){
-        $this->load->view('student/header');
-        $this->load->view('login');
-    }
-
 }
