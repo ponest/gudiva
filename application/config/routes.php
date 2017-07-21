@@ -11,12 +11,6 @@ $route['auth/login'] = 'auth/login';
 $route['auth/logout'] = 'auth/logout';
 $route['auth/signup']='auth/signup';
 $route['auth/register'] = 'auth/register';
-$route['new_student'] = 'authentication/new_student_registration';
-$route['student'] = 'authentication/student_login_process';
-$route['home'] = 'authentication/home';
-$route['admin'] = 'authentication/admin';
-$route['homepage'] = 'authentication/homepage';
-$route['init']='authentication/init';
 
 /*===============INIT================*/
 
@@ -34,38 +28,29 @@ $route['edu-tips']='init/tips';
 $route['past-papers']='init/past_papers';
 $route['login_admin']='init/login_admin';
 
-//$route['login']='init/login';
-//$route['auth/signup']='init/register';
 
-/*===========dashboard for students=========*/
+/*================ADMIN=====================*/
+$route['admin/dashboard'] = 'admin/index';
 
-$route['student_o_level_topics'] = 'dashboard/o_level_topics';
-$route['student_a_level_topics'] = 'dashboard/a_level_topics';
-$route['student_dashboard'] = 'dashboard/dashboard_loader';
-$route['student_tips'] = 'dashboard/educational_tips';
-$route['student_chat'] = 'dashboard/chat';
-$route['student_my_topics'] = 'dashboard/my_topics';
-$route['student_a_level_past_papers'] = 'dashboard/a_level_past_papers';
-$route['student_o_level_past_papers'] = 'dashboard/o_level_past_papers';
-$route['student_o_level_questions'] = 'dashboard/o_level_questions';
-$route['student_a_level_questions'] = 'dashboard/o_level_questions';
-$route['student_pages/(:any)'] = 'dashboard/load_pages/$1';
-$route['start_btn'] = 'dashboard/topic_content';
+//------------Topics routes ------
+$route['admin/topics'] = 'admin/topics';
+$route['admin/topics/create'] = 'admin/topics/create';
+$route['admin/topics/edit/(:any)'] = 'admin/topics/edit/$1';
 
-/*================admin========================*/
+//------------Questions routes ------
+$route['admin/questions'] = 'admin/questions';
+$route['admin/questions/create'] = 'admin/questions/create';
+$route['admin/questions/edit/(:any)'] = 'admin/questions/edit/$1';
 
-$route['admin_dashboard'] = 'admin/dashboard_home';
-$route['o_level_topics'] = 'admin/o_level_topics';
-$route['a_level_topics'] = 'admin/a_level_topics';
-$route['tips'] = 'admin/educational_tips';
-$route['o_level_past_papers'] = 'admin/o_level_past_papers';
-$route['a_level_past_papers'] = 'admin/a_level_past_papers';
-$route['a_level_questions'] = 'admin/a_level_questions';
-$route['o_level_questions'] = 'admin/o_level_questions';
-$route['delete_topic/(:any)'] = 'topics/delete_topic/$1';
-$route['level/(:any)'] = 'topics/add_topic_form/$1';
-$route['pp_level/(:any)'] = 'past_papers/add_pp_form/$1';
-$route['qn_level/(:any)'] = 'questions/add_qn_form/$1';
-$route['edu_tips/(:any)'] = 'education_tips/add_tips/$1';
+//------------Tips routes ------
+$route['admin/tips'] = 'admin/tips';
+$route['admin/tips/create'] = 'admin/tips/create';
+$route['admin/tips/edit/(:any)'] = 'admin/tips/edit/$1';
+
+//------------Past Papers routes ------
+$route['admin/past_papers'] = 'admin/past_papers';
+$route['admin/past_papers/create'] = 'admin/past_papers/create';
+$route['admin/past_papers/edit/(:any)'] = 'admin/past_papers/edit/$1';
+
 
 

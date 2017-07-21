@@ -12,17 +12,17 @@
     <title>SB Admin - Bootstrap Admin Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/admin/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/admin/dataTables.bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="assets/css/admin/sb-admin.css" rel="stylesheet">
+    <link href="../assets/css/admin/sb-admin.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="assets/css/admin/plugins/morris.css" rel="stylesheet">
+    <link href="../assets/css/admin/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
