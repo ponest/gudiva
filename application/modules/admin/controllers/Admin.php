@@ -17,7 +17,7 @@ class Admin extends Admin_Controller
         $this->load->helper(array('url'));
     }
 
-    public function index(){
+    public function dashboard(){
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."dashboard";
         $data['module'] = '';
         $this->load->view($this->_container, $data);

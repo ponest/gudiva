@@ -21,7 +21,6 @@ $route['alevel_topics']='init/alevel_topics';
 $route['start-topic']='init/start_topic';
 $route['olevel_pp']='init/olevel_pp';
 $route['alevel_pp']='init/alevel_pp';
-$route['dashboard']='init/dashboard';
 $route['topics']='init/topics';
 $route['questions']='init/questions';
 $route['edu-tips']='init/tips';
@@ -29,7 +28,7 @@ $route['past-papers']='init/past_papers';
 
 
 /*================ADMIN=====================*/
-$route['admin/dashboard'] = 'admin/index';
+$route['admin/'] = 'admin/dashboard';
 
 //------------Topics routes ------
 $route['admin/topics'] = 'admin/topics';
