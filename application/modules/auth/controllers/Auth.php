@@ -20,7 +20,7 @@ class Auth extends MY_Controller {
             redirect('admin/dashboard', 'refresh');
         } else {
             $data['page'] = $this->config->item('gudiva_template_dir_public') . "login";
-            $data['module'] = 'auth';
+            $data['module'] = '';
 
             $this->load->view($this->_container, $data);
         }
@@ -48,7 +48,7 @@ class Auth extends MY_Controller {
             (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
             $data['page'] = $this->config->item('gudiva_template_dir_public'). "login";
-            $data['module'] = 'auth';
+            $data['module'] = '';
 
             $this->load->view($this->_container, $data);
         }
@@ -61,7 +61,7 @@ class Auth extends MY_Controller {
 
     public function signup(){
         $data['page'] = $this->config->item('gudiva_template_dir_public'). "registration";
-        $data['module'] = 'auth';
+        $data['module'] = '';
 
         $this->load->view($this->_container, $data);
     }

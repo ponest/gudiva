@@ -1,48 +1,39 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: KILENGA
- * Date: 3/30/2017
- * Time: 10:24 PM
- */
-?>
-<!doctype html>
-<html>
-<head>
-    <link rel="stylesheet" href="assets/css/past_papers.css" type="text/css">
-</head>
-
-<body>
-<div class="row first">
-    <div class="col-sm-12">
-        <form class="navbar-form navbar-right">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default search-btn">Search</button>
-        </form>
+<div class="page-wrapper">
+    <div class="row first">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                "A" Level Past Papers
+            </h1>
+        </div>
     </div>
-</div><hr>
-<div class="row second">
-    <table class="table table-striped table-responsive table-hover">
-        <tr>
-            <th>Year</th>
-            <th>Subject</th>
-            <th>Level</th>
-            <th>View</th>
-        </tr>
-        <tr>
-            <td>2014</td>
-            <td>Mathematics</td>
-            <td>Form five</td>
-            <td>
-                <a href="#">view</a>
-            </td>
-        </tr>
-    </table>
+    <div class="row second">
+        <table class="table table-striped table-responsive table-bordered table-hover" id="mydata">
+            <thead>
+            <tr>
+                <th>Year</th>
+                <th>Subject</th>
+                <th>Level</th>
+                <th>View</th>
+            </tr>
+            </thead>
+           <tfoot>
+           <tr>
+               <th>Year</th>
+               <th>Subject</th>
+               <th>Level</th>
+               <th>View</th>
+           </tr>
+           </tfoot>
+            <tbody>
+            <tr>
+                <td>2014</td>
+                <td>Mathematics</td>
+                <td>Form five</td>
+                <td>
+                    <a href="#">view</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-</body>
-</html>

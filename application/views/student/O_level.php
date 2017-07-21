@@ -1,35 +1,20 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: kilenga
- * Date: 7/18/17
- * Time: 8:09 PM
- */
-?>
-<!doctype html>
-<html lang="En-US">
-<head>
-    <meta charset="UTF-8">
-    <title>Gudiva Online Library</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/index.css" type="text/css">
-
-</head>
-
-<body>
-<div id="second-row">
-    <img src="assets/images/student1.jpg">
-    <div class=" row center_contents">
-        <div class="col-lg-12">
-            <p style="font-size: 50px; font-weight: 600;font-family: merifont;">Gudiva Online Library</p>
-            <p style="font-size: 50px; font-weight: 600;font-family: Verdana; color: whitesmoke">Powerful Tool</p>
-            <p style="font-size: 35px; font-weight: 600; font-family: Verdana;">For Supporting Easy Learning</p>
-            <hr><br/>
+<style>
+    body{
+        background-color: lightgray;
+    }
+</style>
+<div id="content">
+    <div class="row">
+        <div class="col-sm-12">
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" name="search" class="form-control" placeholder="Search Topic">
+                    <button type="submit" class="btn btn-default search-btn" >Search</button>
+                </div>
+            </form>
         </div>
     </div>
-</div>
-<div id="third-row">
+    <hr>
     <div class="row" style="margin-top: 4vh; margin-left: 20px; margin-right: 20px">
 
         <div class="col-md-3">
@@ -102,20 +87,3 @@
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-4 col-md-offset-4">
-        <a href="olevel_topics"><button class="btn btn-default big-btn">More Topics</button> </a>
-    </div>
-</div>
-<div class="row">
-    <div class="footer">
-        <span>Gudiva Online Library &copy <?= date('Y');  ?></span>
-    </div>
-</div>
-
-</body>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-</html>
-
-

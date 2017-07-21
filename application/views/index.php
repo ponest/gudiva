@@ -13,7 +13,6 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
             <link rel="stylesheet" href="assets/css/index.css" type="text/css">
-
         </head>
 
         <body>
@@ -28,7 +27,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="navbar-brand"><img class="logo" src="assets/images/logo.png" style="height:5vh; width: 120%"></div>
+                    <div class="navbar-brand">
+                        <img class="logo" src="assets/images/logo.png" style="height:5vh; width: 120%">
+                    </div>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,7 +70,7 @@
                 <p style="font-size: 50px; font-weight: 600;font-family: merifont;">Gudiva Online Library</p>
                 <p style="font-size: 50px; font-weight: 600;font-family: Verdana; color: whitesmoke">Powerful Tool</p>
                 <p style="font-size: 35px; font-weight: 600; font-family: Verdana;">For Supporting Easy Learning</p>
-                <hr><br/>
+                <hr class="horizontal_line"><br/>
             </div>
             </div>
         </div>

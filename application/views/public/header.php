@@ -26,6 +26,11 @@
 
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <style>
+            a:hover{
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
 
@@ -40,7 +45,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <div class="navbar-brand"><img class="logo" src="../assets/images/logo.png" style="height:5vh; width: 120%"></div>
+                        <div class="navbar-brand"><a href="<?= base_url()?>" style="color: white">Home</a></div>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,16 +54,16 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">Topics <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="olevel">O Level</a></li>
-                                    <li><a href="alevel">A Level</a></li>
+                                    <li><a href="<?= base_url('olevel') ?>">O Level</a></li>
+                                    <li><a href="<?= base_url('alevel')?>">A Level</a></li>
                                 </ul>
                             </li>
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">Past Papers <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="olevel_pp">O Level Past Papers</a></li>
-                                    <li><a href="alevel_pp">A Level Past Papers</a></li>
+                                    <li><a href="<?= base_url('olevel_pp')?>">O Level Past Papers</a></li>
+                                    <li><a href="<?= base_url('alevel_pp')?>">A Level Past Papers</a></li>
                                 </ul>
                             </li>
 
@@ -66,8 +71,8 @@
                             <li><a href="#" style="color: white">Chat</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="login" style="color: white">Login</a></li>
-                            <li><a href="signup" style="color: white">Register</a></li>
+                            <li><a href="<?= base_url('auth/login')?>" style="color: white">Login</a></li>
+                            <li><a href="<?= base_url('auth/signup')?>" style="color: white">Register</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
