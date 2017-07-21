@@ -3,6 +3,10 @@ body{
     overflow-x: hidden;
 
 }
+.first{
+    margin: -20px 2% 0;
+
+}
 hr{
     margin-left: 30px;
     margin-right: 30px;
@@ -19,8 +23,7 @@ hr{
     margin-right: 30px;
 }
 .second{
-    margin-right: 10%;
-    margin-left: 10%;
+    margin: 0 5% 0;
     font-family: Cambria;
     font-size: 14px;
 }

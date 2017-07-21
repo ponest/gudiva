@@ -38,7 +38,21 @@ body{
     #second-row::after{
         display: none;
     }
+    .title_bar{
+        display: block;
+    }
 }
+@media screen and (max-width: 760px) and (min-width: 425px) {
+.center_contents{
+    display: none;
+}
+    #second-row::after{
+        display: none;
+    }
+}
+
+
+
 .center_contents{
     z-index: 6;
     position:absolute;
@@ -47,10 +61,11 @@ body{
     width: 50%;
     color: white;
 }
-hr{
+.horizontal_line{
     margin-top:2vh;
     height: 2px;
     background-color: white;
+    margin-left:0;
 }
 .upper-part img{
     height: 150px;

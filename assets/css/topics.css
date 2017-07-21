@@ -1,5 +1,4 @@
 body{
-    background-color: lightgray;
     overflow-x: hidden;
 
 }
@@ -36,6 +35,9 @@ hr{
     font-family: Cambria;
     font-weight: 600;
 }
+.upper-part{
+    background-color: white;
+}
 .upper-part img{
     height: 150px;
     width:100%;
@@ -45,6 +47,7 @@ hr{
     padding: 15px 15px 20px;
     height: 200px;
     font-family: Cambria;
+    text-align: justify;
 
 }
 .lower-part h4{

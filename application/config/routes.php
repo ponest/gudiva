@@ -32,6 +32,7 @@ $route['topics']='init/topics';
 $route['questions']='init/questions';
 $route['edu-tips']='init/tips';
 $route['past-papers']='init/past_papers';
+$route['login_admin']='init/login_admin';
 
 //$route['login']='init/login';
 //$route['auth/signup']='init/register';
