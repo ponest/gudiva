@@ -17,11 +17,11 @@
         <meta name="author" content="">
 
         <title>GUDIVA-Online Library</title>
-        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/index.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/login.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/register.css" rel="stylesheet" type="text/css">
+        <link href="<?= base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?= base_url() ?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="<?= base_url() ?>assets/css/index.css" rel="stylesheet" type="text/css">
+        <link href="<?= base_url() ?>assets/css/login.css" rel="stylesheet" type="text/css">
+        <link href="<?= base_url() ?>assets/css/register.css" rel="stylesheet" type="text/css">
 <!--        <link href="assets/css/topics.css" rel="stylesheet" type="text/css">-->
 
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

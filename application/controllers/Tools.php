@@ -151,4 +151,31 @@ class $name extends Seeder {
         echo "$path seeder has successfully been created." . PHP_EOL;
     }
 
+    public function model($name) {
+        $this->make_model_file($name);
+    }
+
+    protected function make_model_file($name) {
+        $path = APPPATH . "modules/admin/models/$name.php";
+
+        $my_model = fopen($path, "w") or die("Unable to create model file!");
+
+        $model_template = "<?php (defined('BASEPATH')) OR exit('No direct script access allowed');
+
+    class $name extends MY_Model {
+
+        public function __construct() {
+            parent::__construct();
+        }
+    }
+    ";
+
+        fwrite($my_model, $model_template);
+
+        fclose($my_model);
+
+        echo "$path model has successfully been created." . PHP_EOL;
+    }
+
+
 }

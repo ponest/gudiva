@@ -26,21 +26,6 @@ class Migration_Ion_Auth extends CI_Migration {
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->create_table('groups');
 
-        // Dumping data for table 'groups'
-        $data = array(
-            array(
-                'id' => '1',
-                'name' => 'admin',
-                'description' => 'Administrator'
-            ),
-            array(
-                'id' => '2',
-                'name' => 'student',
-                'description' => 'General User'
-            ),
-        );
-        $this->db->insert_batch('groups', $data);
-
         //Drop table 'users' if it exists
         $this->dbforge->drop_table('users', TRUE);
 
@@ -124,23 +109,6 @@ class Migration_Ion_Auth extends CI_Migration {
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->create_table('users');
 
-        // Dumping data for table 'users'
-        $data = array(
-            'id' => 'gdv00001',
-            'username' => 'admin',
-            'password' => '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36',
-            'salt' => '',
-            'email' => 'admin@gudiva.com',
-            'activation_code' => '',
-            'forgotten_password_code' => NULL,
-            'created_on' => '1268889823',
-            'last_login' => '1268889823',
-            'active' => '1',
-            'first_name' => 'Admin',
-            'last_name' => 'Gudiva',
-            'phone' => '0',
-        );
-        $this->db->insert('users', $data);
 
         // Drop table 'users_groups' if it exists
         $this->dbforge->drop_table('users_groups', TRUE);
@@ -167,20 +135,6 @@ class Migration_Ion_Auth extends CI_Migration {
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->create_table('users_groups');
 
-        // Dumping data for table 'users_groups'
-        $data = array(
-            array(
-                'id' => '1',
-                'user_id' => 'gdv00001',
-                'group_id' => '1',
-            ),
-            array(
-                'id' => '2',
-                'user_id' => 'gdv00001',
-                'group_id' => '2',
-            )
-        );
-        $this->db->insert_batch('users_groups', $data);
 
         // Drop table 'login_attempts' if it exists
         $this->dbforge->drop_table('login_attempts', TRUE);

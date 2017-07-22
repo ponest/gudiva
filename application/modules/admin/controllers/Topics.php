@@ -5,7 +5,7 @@
  * Date: 7/21/17
  * Time: 3:20 AM
  */
-include_once(APPPATH.'core/Admin_Controller.php');
+
 class Topics extends Admin_Controller
 {
     function __construct()
@@ -14,7 +14,7 @@ class Topics extends Admin_Controller
         $this->load->model(array('admin/topic'));
     }
 
-    public function topics()
+    public function topics_list()
     {
         $topics = $this->topic->get_all();
 
@@ -22,6 +22,7 @@ class Topics extends Admin_Controller
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."topics";
 
         $this->load->view($this->_container, $data);
+        //var_dump($data);
     }
 
     public function create()
@@ -29,9 +30,11 @@ class Topics extends Admin_Controller
         if ($this->input->post('name') && $this->input->post('description') && $this->input->post('subject'))
         {
             $data['name'] =  $this->input->post('name');
-            $data['description'] = $this->input->post('description');
             $data['subject'] = $this->input->post('subject');
-            $this->topic->insert    ($data);
+            $data['level'] = $this->input->post('subject');
+            $data['description'] = $this->input->post('description');
+            $data['image'] = $this->input->post('subject');
+            $this->topic->insert($data);
 
             redirect('/admin/topics', 'refresh');
         }

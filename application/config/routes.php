@@ -25,14 +25,15 @@ $route['topics']='init/topics';
 $route['questions']='init/questions';
 $route['edu-tips']='init/tips';
 $route['past-papers']='init/past_papers';
-$route['login_admin']='init/login_admin';
+//$route['login_admin']='init/login_admin';
 
 
 /*================ADMIN=====================*/
-$route['admin/'] = 'admin/dashboard';
+$route['admin'] = 'admin/admin';
+$route['admin/dashboard'] = 'admin/dashboard';
 
 //------------Topics routes ------
-$route['admin/topics'] = 'admin/topics';
+$route['topics'] = 'admin/topics/topics_list';
 $route['admin/topics/create'] = 'admin/topics/create';
 $route['admin/topics/edit/(:any)'] = 'admin/topics/edit/$1';
 

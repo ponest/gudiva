@@ -12,17 +12,17 @@
     <title>SB Admin - Bootstrap Admin Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/admin/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/css/admin/dataTables.bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../assets/css/admin/sb-admin.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/css/admin/sb-admin.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="../assets/css/admin/plugins/morris.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/css/admin/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url() ?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -154,25 +154,25 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li class="active">
-                    <a href="dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    <a href="<?= base_url('dashboard')?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a href="topics"><i class="fa fa-fw fa-book"></i>Topics</a>
+                    <a href="<?= base_url('topics')?>"><i class="fa fa-fw fa-book"></i>Topics</a>
                 </li>
                 <li>
-                    <a href="questions"><i class="fa fa-fw fa-book"></i>Questions</a>
+                    <a href="<?= base_url('questions')?>"><i class="fa fa-fw fa-book"></i>Questions</a>
                 </li>
                 <li>
-                    <a href="edu-tips"><i class="fa fa-fw fa-briefcase"></i>Tips</a>
+                    <a href="<?= base_url('edu-tips')?>"><i class="fa fa-fw fa-briefcase"></i>Tips</a>
                 </li>
                  <li>
-                    <a href="past-papers"><i class="fa fa-fw fa-paperclip"></i>Past Papers</a>
+                    <a href="<?= base_url('past-papers')?>"><i class="fa fa-fw fa-paperclip"></i>Past Papers</a>
                 </li>
                  <li>
-                    <a href="edu-tips"><i class="fa fa-fw fa-user"></i>Users</a>
+                    <a href="<?= base_url('edu-tips')?>"><i class="fa fa-fw fa-user"></i>Users</a>
                 </li>
                  <li>
-                    <a href="edu-tips"><i class="fa fa-fw fa-user-plus"></i>User Groups</a>
+                    <a href="<?= base_url('edu-tips')?>"><i class="fa fa-fw fa-user-plus"></i>User Groups</a>
                 </li>
 
             </ul>

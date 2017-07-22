@@ -21,33 +21,38 @@
     <table class="table table-striped table-responsive table-bordered table-hover" id="mydata">
        <thead>
        <tr>
-           <th>Subject</th>
-           <th>Topic</th>
-           <th>Level</th>
-           <th>Author</th>
-           <th>Date</th>
-           <th  style="width: 185px">Option</th>
+           <th>ID</th>
+           <th>TOPIC</th>
+           <th>SUBJECT</th>
+           <th>LEVEL</th>
+           <th>DATE CREATED</th>
+           <th>LAST UPDATED</th>
+           <th  style="width: 185px">OPTIONS</th>
        </tr>
        </thead>
         <tfoot>
         <tr>
-            <th>Subject</th>
-            <th>Topic</th>
-            <th>Level</th>
-            <th>Author</th>
-            <th>Date</th>
-            <th>Option</th>
+            <th>ID</th>
+            <th>TOPIC</th>
+            <th>SUBJECT</th>
+            <th>LEVEL</th>
+            <th>DATE CREATED</th>
+            <th>LAST UPDATED</th>
+            <th  style="width: 185px">OPTIONS</th>
         </tr>
         </tfoot>
         <tbody>
-        <tr>
-            <td>Mathematics</td>
-            <td>Hyperbolic Functions</td>
-            <td>A level</td>
-            <td>Mr Zengo</td>
-            <td>27/07/2017</td>
-            <td><button class="btn btn-sm btn-primary"><i class="fa fa-eye" ></i>&nbsp;View</button>&nbsp;<button class="btn btn-sm btn-success"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit</button>&nbsp;<button class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>&nbsp;Delete</button> </td>
-        </tr>
+        <?php foreach ($topics as $topic):?>
+            <tr>
+                <td><?= $topic->id ?></td>
+                <td><?= $topic->name ?></td>
+                <td><?= $topic->subject ?></td>
+                <td><?= $topic->level ?></td>
+                <td><?= $topic->date_created ?></td>
+                <td><?= $topic->date_updated ?></td>
+                <td><button class="btn btn-sm btn-primary"><i class="fa fa-eye" ></i>&nbsp;View</button>&nbsp;<button class="btn btn-sm btn-success"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit</button>&nbsp;<button class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>&nbsp;Delete</button> </td>
+            </tr>
+        <?php endforeach; ?>
         </tbody>
     </table>
 </div>
