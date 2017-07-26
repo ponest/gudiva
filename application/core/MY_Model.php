@@ -18,7 +18,7 @@ class MY_Model extends CI_Model {
     }
 
     public function get($id) {
-        return $this->db->get_where($this->table_name, array($this->primary_key => $id))->row();
+        return $this->db->get_where($this->table_name, array($this->primary_key => $id))->result();
     }
 
     public function get_all($fields = '', $where = array(), $table = '', $limit = '', $order_by = '', $group_by = '') {
@@ -61,6 +61,7 @@ class MY_Model extends CI_Model {
 
     public function insert($data) {
         $data['date_created'] = $data['date_updated'] = date('Y-m-d H:i:s');
+        
 
         $success = $this->db->insert($this->table_name, $data);
         if ($success) {
