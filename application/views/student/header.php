@@ -18,13 +18,13 @@
         <meta name="author" content="">
 
         <title>Student</title>
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/admin/dataTables.bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="assets/css/index.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/login.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/past_papers.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/topics.css" type="text/css">
+        <link href="<?= base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?= base_url()?>assets/css/admin/dataTables.bootstrap.min.css" rel="stylesheet">
+        <link href="<?= base_url()?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="<?= base_url()?>assets/css/index.css" type="text/css">
+        <link rel="stylesheet" href="<?= base_url()?>assets/css/login.css" type="text/css">
+        <link rel="stylesheet" href="<?= base_url()?>assets/css/past_papers.css" type="text/css">
+        <link rel="stylesheet" href="<?= base_url()?>assets/css/topics.css" type="text/css">
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <style>
@@ -55,25 +55,24 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">Topics <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="olevel">O Level</a></li>
-                                <li><a href="alevel">A Level</a></li>
+                                <li><a href="<?= base_url('olevel')?>">O Level</a></li>
+                                <li><a href="<?= base_url('alevel')?>">A Level</a></li>
                             </ul>
                         </li>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">Past Papers <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="olevel_pp">O Level Past Papers</a></li>
-                                <li><a href="alevel_pp">A Level Past Papers</a></li>
+                                <li><a href="<?= base_url('olevel_pp')?>">O Level Past Papers</a></li>
+                                <li><a href="<?= base_url('olevel_pp')?>">A Level Past Papers</a></li>
                             </ul>
                         </li>
 
                         <li><a href="#" style="color: white">Forum</a></li>
-                        <li><a href="#" style="color: white">Chat</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li style="color: white; padding-top: 15px"><i class="fa fa-lg fa-user"></i>&nbsp;Onest Paul Kilenga</li>
-                        &nbsp;<li><a href="auth/login" style="color: white">Logout</a></li>
+                        &nbsp;<li><a href="<?= base_url('auth/login')?>" style="color: white">Logout</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->

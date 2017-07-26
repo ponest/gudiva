@@ -58,12 +58,12 @@
                 <div class="modal-body">
                     <form role="form">
                         <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="tip_name" id="tip_name" class="form-control input-sm" placeholder="Tip Name">
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="author" id="author" class="form-control input-sm" placeholder="Author">
                                 </div>

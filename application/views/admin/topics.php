@@ -70,36 +70,36 @@
             <div class="modal-body">
                 <form role="form">
                     <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="form-group">
                                 <input type="text" name="subject" id="subject" class="form-control input-sm" placeholder="Subject">
                             </div>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="form-group">
                                 <input type="text" name="class" id="class" class="form-control input-sm" placeholder="Class">
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="form-group">
                                 <input type="text" name="topic_name" id="topic_name" class="form-control input-sm" placeholder="Topic Name">
                             </div>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="form-group">
                                 <input type="text" name="instructor" id="instructor" class="form-control input-sm" placeholder="Instructor">
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="form-group">
                                 <label for="exampleInputFile">File input</label>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="form-group">
                                 <input type="file" id="InputFile">
                             </div>
