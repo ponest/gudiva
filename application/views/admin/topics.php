@@ -94,50 +94,6 @@
 </div>
 <div class="container">
     <div class="modal fade" id="add_topic">
-
-<<<<<<< HEAD
-    <div class="modal-dialog">
-        <div class="modal-content">
-       <!-- header-->
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h2 class="modal-title" style="font-family: Cambria">Add Topic</h2>
-            </div>
-       <!-- body -->
-            <div class="modal-body">
-                <form role="form">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="subject" id="subject" class="form-control input-sm" placeholder="Subject">
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="class" id="class" class="form-control input-sm" placeholder="Class">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="topic_name" id="topic_name" class="form-control input-sm" placeholder="Topic Name">
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="instructor" id="instructor" class="form-control input-sm" placeholder="Instructor">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputFile">File input</label>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6">
-=======
         <div class="modal-dialog">
             <div class="modal-content">
            <!-- header-->
@@ -194,7 +150,6 @@
                             </div>
                         </div>
                         <div class="row" style="margin-right: 2px; margin-left: 2px;">
->>>>>>> 2407f1ea5162aea3cdda459150e873b66867aae7
                             <div class="form-group">
                                 <textarea class="form-control" id="description" name="description" rows="2" placeholder="Description"></textarea>
                             </div>
