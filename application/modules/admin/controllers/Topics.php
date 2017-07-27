@@ -12,6 +12,8 @@ class Topics extends Admin_Controller
     {
         parent::__construct();
         $this->load->model(array('admin/topic'));
+        $this->load->helper(array('form', 'url'));
+        $this->load->library(array('session'));
     }
 
     public function topics_list()
@@ -27,44 +29,63 @@ class Topics extends Admin_Controller
 
     public function create()
     {
-        if ($this->input->post('name') && $this->input->post('description') && $this->input->post('subject'))
+
+//        $config['upload_path'] = './updloads/images/topics/';
+//        $config['allowed_types'] = 'jpg';
+//        $config['max_size'] = 0;
+//        $config['max_width'] = 0;
+//        $config['max_height'] = 0;
+//
+//        $this->load->library('upload', $config);
+
+        if ($this->input->post('name') && $this->input->post('description') && $this->input->post('subject') && $this->input->post('level'))
         {
+
             $data['name'] =  $this->input->post('name');
             $data['subject'] = $this->input->post('subject');
-            $data['level'] = $this->input->post('subject');
+            $data['level'] = $this->input->post('level');
             $data['description'] = $this->input->post('description');
-            $data['image'] = $this->input->post('subject');
-            $this->topic->insert($data);
-
-            redirect('/admin/topics', 'refresh');
+            $data['image'] = '';
+            if($this->topic->insert($data)){
+                $this->session->set_flashdata('success_msg', 'Topic added successfully');
+                redirect('admin/topics', reflesh);
+            }
         }
 
-        $data['page'] = $this->config->item('gudiva_template_dir_admin')."topics_create";
-        $this->load->view($this->_container, $data);
+//        $data['page'] = $this->config->item('gudiva_template_dir_admin')."topics";
+//        $this->load->view($this->_container, $data);
+            var_dump($data);
     }
+
 
     public function edit($id)
     {
-        if ($this->input->post('name') && $this->input->post('description') && $this->input->post('subject'))
+        $topic = $this->topic->get($id);
+
+        $data['topic'] = $topic;
+        $data['page'] = $this->config->item('gudiva_template_dir_admin')."topic_edit";
+        $this->load->view($this->_container, $data);
+    }
+
+    public function update($id)
+    {
+        if ($this->input->post('name') OR $this->input->post('description') OR $this->input->post('subject'))
         {
             $data['name'] =  $this->input->post('name');
             $data['description'] = $this->input->post('description');
             $data['subject'] = $this->input->post('subject');
-            $this->topic->update($data, $id);
-
-            redirect('/admin/topics', 'refresh');
+            if ($this->topic->update($data, $id))
+            {
+                $this->session->set_flashdata('success_msg', 'Topic updated successfully');
+                redirect('admin/topics/', 'refresh');
+            }
         }
-
-        $topic = $this->topic->get($id);
-
-        $data['topic'] = $topic;
-        $data['page'] = $this->config->item('gudiva_template_dir_admin')."topics_edit";
-        $this->load->view($this->_container, $data);
     }
 
     public function delete($id){
         $this->topic->delete($id);
+        $this->session->set_flashdata('success_msg', 'Topic deleted successfully');
 
-        redirect('/admin/topics', 'refresh');
+        echo json_encode(array("status" => TRUE));
     }
 }

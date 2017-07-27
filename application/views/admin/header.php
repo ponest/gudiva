@@ -152,19 +152,26 @@
                 <li class="active">
                     <a href="<?= base_url('dashboard')?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                 </li>
-                <li>
-                    <a href="<?= base_url('topics')?>"><i class="fa fa-fw fa-book"></i>Topics</a>
+                <li class="">
+                    <a href="<?= base_url('admin/topics')?>"><i class="fa fa-fw fa-book"></i>Topics</a>
                 </li>
+<<<<<<< HEAD
                 <li>
+=======
+                <li class="">
+                    <a href="<?= base_url('questions')?>"><i class="fa fa-fw fa-book"></i>Questions</a>
+                </li>
+                <li class="">
+>>>>>>> 2407f1ea5162aea3cdda459150e873b66867aae7
                     <a href="<?= base_url('edu-tips')?>"><i class="fa fa-fw fa-briefcase"></i>Tips</a>
                 </li>
-                 <li>
+                 <li class="">
                     <a href="<?= base_url('past-papers')?>"><i class="fa fa-fw fa-paperclip"></i>Past Papers</a>
                 </li>
-                 <li>
+                 <li class="">
                     <a href="<?= base_url('edu-tips')?>"><i class="fa fa-fw fa-user"></i>Users</a>
                 </li>
-                 <li>
+                 <li class="">
                     <a href="<?= base_url('edu-tips')?>"><i class="fa fa-fw fa-user-plus"></i>User Groups</a>
                 </li>
 

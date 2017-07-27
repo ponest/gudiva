@@ -22,7 +22,48 @@
 <script>
     $('#mydata').dataTable();
 </script>
+<script>
+    $(document).ready(function(){
 
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove();
+            });
+        }, 2000);
+
+//        $('#edit_topic').click(function(){
+//            var currentRow=$(this).closest("tr");
+//            var id=currentRow.find("td:eq(0)").html();
+//
+//            $.ajax({
+//                url: '<?//= base_url("admin/topics/update/")?>//' + id,
+//                type: 'POST',
+//                dataType: 'JSON',
+//                success: function(){
+//                    console.log("Mode Loaded");
+//                },
+//            });
+//
+//        });
+
+        $('#delete_topic').click(function(){
+            var currentRow=$(this).closest("tr");
+            var id=currentRow.find("td:eq(0)").html();
+
+            if(confirm("Are you sure you want to delete this Topic?")){
+                $.ajax({
+                   url: '<?= base_url("admin/topics/delete/")?>' + id,
+                   type: 'POST',
+                   dataType: 'JSON',
+                    success: function(){
+                       location.reload();
+                    }
+                });
+            }
+        });
+    });
+
+</script>
 </body>
 
 </html>
