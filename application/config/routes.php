@@ -34,9 +34,10 @@ $route['admin/dashboard'] = 'admin/dashboard';
 
 //------------Topics routes ------
 $route['admin/topics'] = 'admin/topics/topics_list';
-$route['admin/topics/create'] = 'admin/topics/create';
-$route['admin/topics/edit/(:any)'] = 'admin/topics/edit/$1';
-$route['admin/topics/delete/(:any)'] = 'admin/topics/delete/$1';
+$route['admin/topic/view/(:any)'] = 'admin/topics/view/$1';
+$route['admin/topic/create'] = 'admin/topics/create';
+$route['admin/topic/edit/(:any)'] = 'admin/topics/edit/$1';
+$route['admin/topic/delete/(:any)'] = 'admin/topics/delete/$1';
 
 //------------Questions routes ------
 $route['admin/questions'] = 'admin/questions';

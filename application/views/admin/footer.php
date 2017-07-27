@@ -45,22 +45,22 @@
 //            });
 //
 //        });
-
-        $('#delete_topic').click(function(){
-            var currentRow=$(this).closest("tr");
-            var id=currentRow.find("td:eq(0)").html();
-
-            if(confirm("Are you sure you want to delete this Topic?")){
-                $.ajax({
-                   url: '<?= base_url("admin/topics/delete/")?>' + id,
-                   type: 'POST',
-                   dataType: 'JSON',
-                    success: function(){
-                       location.reload();
-                    }
-                });
-            }
-        });
+//
+//        $('#delete_topic').click(function(){
+//            var currentRow=$(this).closest("tr");
+//            var id=currentRow.find("td:eq(0)").html();
+//
+//            if(confirm("Are you sure you want to delete this Topic?")){
+//                $.ajax({
+//                   url: '<?//= base_url("admin/topics/delete/")?>//' + id,
+//                   type: 'POST',
+//                   dataType: 'JSON',
+//                    success: function(){
+//                       location.reload();
+//                    }
+//                });
+//            }
+//        });
     });
 
 </script>

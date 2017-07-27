@@ -53,7 +53,7 @@
            <th>LEVEL</th>
            <th>DATE CREATED</th>
            <th>LAST UPDATED</th>
-           <th  style="width: 185px">OPTIONS</th>
+           <th  style="width: 189px">OPTIONS</th>
        </tr>
        </thead>
         <tfoot>
@@ -64,7 +64,7 @@
             <th>LEVEL</th>
             <th>DATE CREATED</th>
             <th>LAST UPDATED</th>
-            <th  style="width: 185px">OPTIONS</th>
+            <th  style="width: 189px">OPTIONS</th>
         </tr>
         </tfoot>
         <tbody>
@@ -77,15 +77,15 @@
                 <td><?= $topic->date_created ?></td>
                 <td><?= $topic->date_updated ?></td>
                 <td>
-                    <button class="btn btn-sm btn-primary">
-                        <a href="" ><i class="fa fa-eye" ></i>&nbsp;View</a>
-                    </button>&nbsp;
-                    <a href="<?= base_url('admin/topics/edit/').$topic->id ?>"><button class="btn btn-sm btn-success">
+                    <a href="<?= base_url('admin/topic/view/').$topic->id ?>"><button class="btn btn-sm btn-primary">
+                        <i class="fa fa-eye" ></i>&nbsp;View
+                    </button>&nbsp;</a>
+                    <a href="<?= base_url('admin/topic/edit/').$topic->id ?>"><button class="btn btn-sm btn-success">
                         <i class="fa fa-pencil-square-o"></i>&nbsp;Edit
                     </button>&nbsp</a>
-                    <button id="delete_topic" class="btn btn-sm btn-danger">
-                       <i class="fa fa-pencil-square-o"></i>&nbsp;Delete</a>
-                    </button>&nbsp;
+                    <a href="<?= base_url('admin/topic/delete/').$topic->id ?>"><button class="btn btn-sm btn-danger">
+                       <i class="fa fa-pencil-square-o"></i>&nbsp;Delete
+                    </button>&nbsp;</a>
                 </td>
             </tr>
         <?php endforeach; ?>

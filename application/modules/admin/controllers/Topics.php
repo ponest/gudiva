@@ -57,7 +57,13 @@ class Topics extends Admin_Controller
             var_dump($data);
     }
 
-
+    public function view($id)
+    {
+        $topic = $this->topic->get($id);
+        $data['topic'] = $topic;
+        $data['page'] = $this->config->item('gudiva_template_dir_admin')."topic_view";
+        $this->load->view($this->_container, $data);
+    }
     public function edit($id)
     {
         $topic = $this->topic->get($id);
@@ -82,10 +88,12 @@ class Topics extends Admin_Controller
         }
     }
 
-    public function delete($id){
-        $this->topic->delete($id);
-        $this->session->set_flashdata('success_msg', 'Topic deleted successfully');
-
-        echo json_encode(array("status" => TRUE));
+    public function delete($id)
+    {
+        if ($this->topic->delete($id))
+        {
+            $this->session->set_flashdata('success_msg', 'Topic deleted successfully');
+            redirect('admin/topics/', 'refresh');
+        }
     }
 }
