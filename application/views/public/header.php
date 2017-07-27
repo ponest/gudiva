@@ -51,9 +51,9 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
+                            <li class="dropdown pull-middle">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">Topics <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu pull-middle">
                                     <li><a href="<?= base_url('olevel') ?>">O Level</a></li>
                                     <li><a href="<?= base_url('alevel')?>">A Level</a></li>
                                 </ul>
@@ -68,7 +68,6 @@
                             </li>
 
                             <li><a href="#" style="color: white">Forum</a></li>
-                            <li><a href="#" style="color: white">Chat</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="<?= base_url('auth/login')?>" style="color: white">Login</a></li>

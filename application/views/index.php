@@ -11,8 +11,8 @@
             <meta charset="UTF-8">
             <title>Gudiva Online Library</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-            <link rel="stylesheet" href="assets/css/index.css" type="text/css">
+            <link rel="stylesheet" href="<?= base_url()?>assets/css/bootstrap.min.css" type="text/css">
+            <link rel="stylesheet" href="<?= base_url()?>assets/css/index.css" type="text/css">
         </head>
 
         <body>
@@ -28,7 +28,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="navbar-brand">
-                        <img class="logo" src="assets/images/logo.png" style="height:5vh; width: 120%">
+                        <img class="logo" src="<?= base_url()?>assets/images/logo.png" style="height:5vh; width: 120%">
                     </div>
                 </div>
 
@@ -38,25 +38,24 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">Topics <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="olevel">O Level</a></li>
-                                <li><a href="alevel">A Level</a></li>
+                                <li><a href="<?= base_url('olevel')?>">O Level</a></li>
+                                <li><a href="<?= base_url('alevel')?>">A Level</a></li>
                             </ul>
                         </li>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">Past Papers <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="olevel_pp">O Level Past Papers</a></li>
-                                <li><a href="alevel_pp">A Level Past Papers</a></li>
+                                <li><a href="<?= base_url('olevel_pp')?>">O Level Past Papers</a></li>
+                                <li><a href="<?= base_url('alevel_pp')?>">A Level Past Papers</a></li>
                             </ul>
                         </li>
 
                         <li><a href="#" style="color: white">Forum</a></li>
-                        <li><a href="#" style="color: white">Chat</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="auth/login" style="color: white">Login</a></li>
-                        <li><a href="auth/signup" style="color: white">Register</a></li>
+                        <li><a href="<?= base_url('auth/login')?>" style="color: white">Login</a></li>
+                        <li><a href="<?= base_url('auth/signup')?>" style="color: white">Register</a></li>
 
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -64,7 +63,7 @@
         </nav>
         </div>
         <div id="second-row">
-            <img src="assets/images/student1.jpg">
+            <img src="<?= base_url()?>assets/images/student1.jpg">
             <div class=" row center_contents">
                 <div class="col-lg-12">
                 <p style="font-size: 50px; font-weight: 600;font-family: merifont;">Gudiva Online Library</p>
@@ -80,7 +79,7 @@
             <div class="col-md-3">
                 <div class="well">
                 <div class="row upper-part">
-                    <img src="assets/images/maxresdefault.jpg">
+                    <img src="<?= base_url()?>assets/images/maxresdefault.jpg">
                 </div>
                 <div class="row lower-part">
                     <h4>Respiration</h4>
@@ -89,14 +88,14 @@
                         typically with the intake of oxygen and the release of carbon
                         dioxide from the oxidation of complex organic substances.
                     </p>
-                    <a href="start-topic"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
+                    <a href="<?= base_url('start-topic')?>"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
                 </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="well">
                 <div class="row upper-part">
-                    <img src="assets/images/oxidation1.png">
+                    <img src="<?= base_url()?>assets/images/oxidation1.png">
                 </div>
                 <div class="row lower-part">
                     <h4>Oxidation</h4>
@@ -106,14 +105,14 @@
                         elements lose electrons more easily than others.
                         These elements are said to be easily oxidized.
                     </p>
-                    <a href="start-topic"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
+                    <a href="<?= base_url('start-topic')?>"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
                 </div>
             </div>
             </div>
             <div class=" col-md-3 ">
                 <div class="well">
                     <div class="row upper-part">
-                        <img src="assets/images/density.jpg"/>
+                        <img src="<?= base_url()?>assets/images/density.jpg"/>
                     </div>
                     <div class="lower-part">
                         <h4>Density</h4>
@@ -123,14 +122,14 @@
                             the mass of the substance and how much space it takes
                             up (volume).
                         </p>
-                        <a href="start-topic"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
+                        <a href="<?= base_url('start-topic')?>"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
                     </div>
                 </div>
             </div>
                 <div class="col-md-3">
                     <div class="well">
                         <div class="row upper-part">
-                            <img src="assets/images/hyperbolic.png"/>
+                            <img src="<?= base_url()?>assets/images/hyperbolic.png"/>
                         </div>
                         <div class="row lower-part">
                             <h4>Hyperbolic Functions</h4>
@@ -140,7 +139,7 @@
                                 to the coordinate axes,as hyperbolic sine or hyperbolic cosine:
                                 often expressed as combinations of exponential functions.
                             </p>
-                            <a href="start-topic"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
+                            <a href="<?= base_url('start-topic')?>"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +152,7 @@
         </div>
 
         </body>
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="<?= base_url()?>assets/js/jquery.js"></script>
+        <script src="<?= base_url()?>assets/js/bootstrap.min.js"></script>
 
     </html>
