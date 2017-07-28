@@ -159,17 +159,17 @@
                     <a href="<?= base_url('admin/questions')?>"><i class="fa fa-fw fa-book"></i>Questions</a>
                 </li>
                 <li class="">
-                    <a href="<?= base_url('admin/edu-tips')?>"><i class="fa fa-fw fa-briefcase"></i>Tips</a>
+                    <a href="<?= base_url('admin/tips')?>"><i class="fa fa-fw fa-briefcase"></i>Tips</a>
                 </li>
                  <li class="">
-                    <a href="<?= base_url('admin/past-papers')?>"><i class="fa fa-fw fa-paperclip"></i>Past Papers</a>
+                    <a href="<?= base_url('admin/pastpapers')?>"><i class="fa fa-fw fa-paperclip"></i>Past Papers</a>
                 </li>
-                 <li class="">
-                    <a href="<?= base_url('admin/edu-tips')?>"><i class="fa fa-fw fa-user"></i>Users</a>
-                </li>
-                 <li class="">
-                    <a href="<?= base_url('admin/edu-tips')?>"><i class="fa fa-fw fa-user-plus"></i>User Groups</a>
-                </li>
+<!--                <li class="">-->
+<!--                    <a href="--><?//= base_url('admin/users')?><!--"><i class="fa fa-fw fa-user"></i>Users</a>-->
+<!--                </li>-->
+<!--                 <li class="">-->
+<!--                    <a href="--><?//= base_url('admin/usergroups')?><!--"><i class="fa fa-fw fa-user-plus"></i>User Groups</a>-->
+<!--                </li>-->
 
             </ul>
         </div>

@@ -42,18 +42,24 @@ $route['admin/topic/delete/(:any)'] = 'admin/topics/delete/$1';
 
 //------------Questions routes ------
 $route['admin/questions'] = 'admin/questions/questions_list';
-$route['admin/questions/create'] = 'admin/questions/create';
-$route['admin/questions/edit/(:any)'] = 'admin/questions/edit/$1';
+$route['admin/question/view/(:any)'] = 'admin/questions/view/$1';
+$route['admin/question/create'] = 'admin/questions/create';
+$route['admin/question/edit/(:any)'] = 'admin/questions/edit/$1';
+$route['admin/question/delete/(:any)'] = 'admin/questions/delete/$1';
 
 //------------Tips routes ------
-$route['admin/tips'] = 'admin/tips';
-$route['admin/tips/create'] = 'admin/tips/create';
-$route['admin/tips/edit/(:any)'] = 'admin/tips/edit/$1';
+$route['admin/tips'] = 'admin/tips/tips_list';
+$route['admin/tip/view/(:any)'] = 'admin/tips/view/$1';
+$route['admin/tip/create'] = 'admin/tips/create';
+$route['admin/tip/edit/(:any)'] = 'admin/tips/edit/$1';
+$route['admin/tip/delete/(:any)'] = 'admin/tips/delete/$1';
 
 //------------Past Papers routes ------
-$route['admin/past_papers'] = 'admin/past_papers';
-$route['admin/past_papers/create'] = 'admin/past_papers/create';
-$route['admin/past_papers/edit/(:any)'] = 'admin/past_papers/edit/$1';
+$route['admin/pastpapers'] = 'admin/pastpapers/pastpapers_list';
+$route['admin/pastpaper/view/(:any)'] = 'admin/pastpapers/view/$1';
+$route['admin/pastpaper/create'] = 'admin/pastpapers/create';
+$route['admin/pastpaper/edit/(:any)'] = 'admin/pastpapers/edit/$1';
+$route['admin/pastpaper/delete/(:any)'] = 'admin/pastpapers/delete/$1';
 
 
 

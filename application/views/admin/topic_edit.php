@@ -19,7 +19,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
                             <label>Topic Title</label>
-                            <input type="text" name="name" id="name" class="form-control input-md" value="<?= $topic->name; ?>" required>
+                            <input type="text" name="name" id="name" class="form-control input-md" value="<?= $topic->name; ?>">
                         </div>
                     </div>
                 </div>
@@ -27,8 +27,8 @@
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
                             <label>Subject</label>
-                            <select class="selectpicker show-tick form-control input-md" name="subject" id="subject" placeholder="Subject" required>
-                                <option value="<?= $topic->subject; ?>" selected><?= $topic->subject; ?>t</option>
+                            <select class="selectpicker show-tick form-control input-md" name="subject" id="subject" placeholder="Subject">
+                                <option value="<?= $topic->subject; ?>" selected><?= $topic->subject; ?></option>
                                 <option value="Mathematics">Mathematics</option>
                                 <option value="Physics">Physics</option>
                                 <option value="Chemistry">Chemistry</option>
@@ -43,7 +43,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
                             <label>Subject Level</label>
-                            <select class="selectpicker show-tick form-control input-md" name="level" id="subject" placeholder="Subject" required>
+                            <select class="selectpicker show-tick form-control input-md" name="level" id="subject" placeholder="Subject">
                                 <option value="<?= $topic->level; ?>" selected><?= $topic->level; ?></option>
                                 <option value="O' level">O' level</option>
                                 <option value="A' level">A' level</option>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                            <input type="file" name="image" id="image" value="<?= $topic->image; ?>"required>
+                            <input type="file" name="image" id="image" value="<?= $topic->image; ?>">
                         </div>
                     </div>
                 </div>

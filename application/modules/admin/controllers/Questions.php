@@ -18,9 +18,67 @@ class Questions extends Admin_Controller
 
     public function questions_list()
     {
+        $questions = $this->question->get_all();
         $data['questions'] = '';
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."questions";
 
         $this->load->view($this->_container, $data);
+    }
+
+    public function create()
+    {
+        if ($this->input->post('question') && $this->input->post('answer') && $this->input->post('question'))
+        {
+
+            $data['question'] =  $this->input->post('question');
+            $data['answer'] = $this->input->post('answer');
+            $data['topic'] = $this->input->post('topic');
+
+            if($this->question->insert($data)){
+                $this->session->set_flashdata('success_msg', 'Question added successfully');
+                redirect('admin/questions', reflesh);
+            }
+        }
+    }
+
+    public function view($id)
+    {
+        $question = $this->question->get($id);
+        $data['question'] = $question;
+        $data['page'] = $this->config->item('gudiva_template_dir_admin')."question_view";
+        $this->load->view($this->_container, $data);
+    }
+
+    public function edit($id)
+    {
+        $question = $this->question->get($id);
+
+        $data['question'] = $question;
+        $data['page'] = $this->config->item('gudiva_template_dir_admin')."question_edit";
+        $this->load->view($this->_container, $data);
+    }
+
+    public function update($id)
+    {
+        if ($this->input->post('question') OR $this->input->post('answer') OR $this->input->post('topic'))
+        {
+            $data['question'] =  $this->input->post('question');
+            $data['answer'] = $this->input->post('answer');
+            $data['topic'] = $this->input->post('topic');
+            if ($this->question->update($data, $id))
+            {
+                $this->session->set_flashdata('success_msg', 'Question updated successfully');
+                redirect('admin/questions/', 'refresh');
+            }
+        }
+    }
+
+    public function delete($id)
+    {
+        if ($this->question->delete($id))
+        {
+            $this->session->set_flashdata('success_msg', 'Question deleted successfully');
+            redirect('admin/questions/', 'refresh');
+        }
     }
 }
