@@ -41,7 +41,7 @@ $route['admin/topic/edit/(:any)'] = 'admin/topics/edit/$1';
 $route['admin/topic/delete/(:any)'] = 'admin/topics/delete/$1';
 
 //------------Questions routes ------
-$route['admin/questions'] = 'admin/questions';
+$route['admin/questions'] = 'admin/questions/questions_list';
 $route['admin/questions/create'] = 'admin/questions/create';
 $route['admin/questions/edit/(:any)'] = 'admin/questions/edit/$1';
 
