@@ -1,14 +1,20 @@
 <?php
 
-class Migration_tips extends CI_Migration {
+class Migration_Tips extends CI_Migration {
 
     public function up() {
+
+        $this->dbforge->drop_table('tips', TRUE);
         $this->dbforge->add_field(array(
             'id' => array(
                 'type' => 'INT',
                 'constraint' => 11,
                 'auto_increment' => TRUE
-            )
+            ),
+            'tip' => array(
+                'type' => 'TEXT',
+                'constraint' => 1000,
+            ),
         ));
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->create_table('tips');

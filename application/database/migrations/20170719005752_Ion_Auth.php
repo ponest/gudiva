@@ -36,6 +36,25 @@ class Migration_Ion_Auth extends CI_Migration {
                     'type' => 'VARCHAR',
                     'constraint' => '8'
                 ),
+                'first_name' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '50',
+                    'null' => TRUE
+                ),
+                'last_name' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '50',
+                    'null' => TRUE
+                ),
+                'email' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '100'
+                ),
+                'phone' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '20',
+                    'null' => TRUE
+                ),
                 'username' => array(
                     'type' => 'VARCHAR',
                     'constraint' => '100'
@@ -47,10 +66,6 @@ class Migration_Ion_Auth extends CI_Migration {
                 'salt' => array(
                     'type' => 'VARCHAR',
                     'constraint' => '40'
-                ),
-                'email' => array(
-                    'type' => 'VARCHAR',
-                    'constraint' => '100'
                 ),
                 'activation_code' => array(
                     'type' => 'VARCHAR',
@@ -83,27 +98,16 @@ class Migration_Ion_Auth extends CI_Migration {
                     'constraint' => '11',
                     'unsigned' => TRUE
                 ),
+                'ip_address' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '16'
+                ),
                 'active' => array(
                     'type' => 'TINYINT',
                     'constraint' => '1',
                     'unsigned' => TRUE,
                     'null' => TRUE
                 ),
-                'first_name' => array(
-                    'type' => 'VARCHAR',
-                    'constraint' => '50',
-                    'null' => TRUE
-                ),
-                'last_name' => array(
-                    'type' => 'VARCHAR',
-                    'constraint' => '50',
-                    'null' => TRUE
-                ),
-                'phone' => array(
-                    'type' => 'VARCHAR',
-                    'constraint' => '20',
-                    'null' => TRUE
-                )
             )
         );
         $this->dbforge->add_key('id', TRUE);

@@ -3,6 +3,7 @@
 class Migration_Topics extends CI_Migration {
 
     public function up() {
+        $this->dbforge->drop_table('topics', TRUE);
         $this->dbforge->add_field(array(
             'id' => array(
                 'type' => 'MEDIUMINT',

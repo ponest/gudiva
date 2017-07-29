@@ -63,4 +63,16 @@ $route['admin/pastpaper/edit/(:any)'] = 'admin/pastpapers/edit/$1';
 $route['admin/pastpaper/delete/(:any)'] = 'admin/pastpapers/delete/$1';
 
 
+// user groups routes
+$route['admin/user-groups'] = 'admin/userGroups';
+$route['admin/user-groups/create'] = 'admin/userGroups/create';
+$route['admin/user-groups/edit/(:any)'] = 'admin/userGroups/edit/$1';
+$route['admin/user-groups/delete/(:any)'] = 'admin/userGroups/delete/$1';
+
+// users routes
+$route['admin/users'] = 'admin/users';
+$route['admin/users/create'] = 'admin/users/create';
+$route['admin/users/edit/(:any)'] = 'admin/users/edit/$1';
+$route['admin/users/delete/(:any)'] = 'admin/users/delete/$1';
+
 

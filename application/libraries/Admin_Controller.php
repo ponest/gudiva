@@ -11,7 +11,7 @@ class Admin_Controller extends MY_Controller {
         $this->_container = $this->config->item('gudiva_template_dir_admin') . "layout.php";
         $this->_modules = $this->config->item('modules_locations');
 
-//        $this->load->library(array('ion_auth'));
+           $this->load->library(array('ion_auth'));
 //
 //        if (!$this->ion_auth->logged_in()) {
 //            redirect('admin/', 'refresh');

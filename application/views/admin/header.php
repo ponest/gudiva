@@ -162,15 +162,14 @@
                     <a href="<?= base_url('admin/tips')?>"><i class="fa fa-fw fa-briefcase"></i>Tips</a>
                 </li>
                  <li class="">
-                    <a href="<?= base_url('admin/pastpapers')?>"><i class="fa fa-fw fa-paperclip"></i>Past Papers</a>
+                    <a href="<?= base_url('admin/past-papers')?>"><i class="fa fa-fw fa-paperclip"></i>Past Papers</a>
                 </li>
-<!--                <li class="">-->
-<!--                    <a href="--><?//= base_url('admin/users')?><!--"><i class="fa fa-fw fa-user"></i>Users</a>-->
-<!--                </li>-->
-<!--                 <li class="">-->
-<!--                    <a href="--><?//= base_url('admin/usergroups')?><!--"><i class="fa fa-fw fa-user-plus"></i>User Groups</a>-->
-<!--                </li>-->
-
+                <li>
+                    <a href="<?= base_url('admin/user-groups') ?>"><i class="fa fa-edit fa-fw"></i> User Groups</a>
+                </li>
+                <li>
+                    <a href="<?= base_url('admin/users') ?>"><i class="fa fa-edit fa-fw"></i> Users</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
