@@ -25,9 +25,10 @@ $route['topics']='init/topics';
 $route['questions']='init/questions';
 $route['edu-tips']='init/tips';
 $route['past-papers']='init/past_papers';
-$route['hello']='init/qn';
-//$route['login_admin']='init/login_admin';
+$route['admin/tip_view']='init/tip_view';
+$route['admin/tip_edit']='init/tip_edit';
 
+//$route['login_admin']='init/login_admin';
 
 /*================Admin=====================*/
 $route['admin'] = 'admin/admin';

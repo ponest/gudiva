@@ -39,7 +39,7 @@
             <td>Inspirational</td>
             <td>Eng Zengo</td>
             <td>27/07/2017</td>
-            <td><button class="btn btn-sm btn-primary"><i class="fa fa-eye" ></i>&nbsp;View</button>&nbsp;<button class="btn btn-sm btn-success"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit</button>&nbsp;<button class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>&nbsp;Delete</button> </td>
+            <td><a href="<?= base_url('admin/tip_view')?>" ><button class="btn btn-sm btn-primary"><i class="fa fa-eye" ></i>&nbsp;View</button></a>&nbsp;<a href="<?= base_url('admin/tip_edit') ?>"><button class="btn btn-sm btn-success"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit</button></a>&nbsp;<button class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i>&nbsp;Delete</button> </td>
         </tr>
         </tbody>
     </table>

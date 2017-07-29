@@ -18,7 +18,7 @@
     </div>
     <div class="row">
         <div class="col-lg-8">
-            <table class="table-striped table-responsive table-bordered table-hover">
+            <table class="table table-striped table-responsive table-bordered table-hover">
                 <tbody>
                     <tr>
                         <td><b>Topic Title</b></td>
@@ -31,14 +31,6 @@
                     <tr>
                         <td><b>Level</b></td>
                         <td><?= $topic->level; ?></td>
-                    </tr>
-                    <tr>
-                        <td><b>Topic Title</b></td>
-                        <td><?= $topic->name; ?></td>
-                    </tr>
-                    <tr>
-                        <td><b>Topic Title</b></td>
-                        <td><?= $topic->name; ?></td>
                     </tr>
                 </tbody>
             </table>

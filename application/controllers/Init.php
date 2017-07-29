@@ -77,8 +77,15 @@ Class Init extends CI_Controller
          $this->load->view('admin/login_admin');
          $this->load->view('public/footer');
      }
-     public function qn(){
-         $this->load->view('test');
+     public function tip_view(){
+         $this->load->view('admin/header');
+         $this->load->view('admin/tip_view');
+         $this->load->view('admin/footer');
      }
+    public function tip_edit(){
+             $this->load->view('admin/header');
+             $this->load->view('admin/tip_edit');
+             $this->load->view('admin/footer');
+    }
 
 }
