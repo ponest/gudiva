@@ -35,7 +35,7 @@
                                     <label>User Group</label>
                                     <select class="form-control" id="group_id" name="group_id">
                                         <?php foreach ($groups as $group): ?>
-                                        <option value="<?=$group->id?>" <?=ui_selected_item($user_group->name,$group->name)?></optio><?=$group->name?></option>
+                                        <option value="<?=$group->id?>" <?=ui_selected_item($user_group->name,$group->name)?></optio><?=$group->description?></option>
                                         <?php endforeach; ?>
                                     </select>
                                 </div>
