@@ -34,7 +34,8 @@ class Migration_Ion_Auth extends CI_Migration {
             array(
                 'id' => array(
                     'type' => 'VARCHAR',
-                    'constraint' => '8'
+                    'constraint' => '8',
+                    'auto_increment' => TRUE
                 ),
                 'first_name' => array(
                     'type' => 'VARCHAR',

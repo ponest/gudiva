@@ -11,7 +11,6 @@ class Auth extends MY_Controller {
         $this->load->helper(array('url', 'language'));
 
         $this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
-
     }
 
     public function index(){
@@ -41,7 +40,7 @@ class Auth extends MY_Controller {
                 redirect('admin/dashboard', 'refresh');
             } else {
                 $this->session->set_flashdata('message', $this->ion_auth->errors());
-                redirect('auth', 'refresh');
+                redirect('admin', 'refresh');
             }
         } else {
             $this->session->set_flashdata('message', $this->ion_auth->errors());
@@ -55,28 +54,32 @@ class Auth extends MY_Controller {
     }
 
     public function logout(){
+	    if ($this->ion_auth->is_admin()){
+            $this->ion_auth->logout();
+            redirect('admin');
+        }
 	    $this->ion_auth->logout();
 	    redirect('auth', 'refresh');
     }
 
-    public function signup(){
-        $data['page'] = $this->config->item('gudiva_template_dir_public'). "registration";
-        $data['module'] = '';
-
-        $this->load->view($this->_container, $data);
-    }
-
-    public function register(){
-        if ($this->ion_auth->logged_in() || $this->ion_auth->is_admin())
-        {
-            redirect('auth', 'refresh');
-        }
-        $this->form_validation->set_rules('first_name', 'First Name', 'required', 'trim');
-        $this->form_validation->set_rules('last_name', 'Last Name', 'required', 'trim');
-        $this->form_validation->set_rules('email', 'E-mail', 'required|valid_email|is_unique[' . $tables['users'] . '.email]');
-        $this->form_validation->set_rules('phone_number', 'Phone Number', 'required', 'trim');
-        $this->form_validation->set_rules('username', 'Username', 'required');
-        $this->form_validation->set_rules('password', 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[password_confirm]');
-        $this->form_validation->set_rules('password_confirm', 'required');
-    }
+//    public function signup(){
+//        $data['page'] = $this->config->item('gudiva_template_dir_public'). "registration";
+//        $data['module'] = '';
+//
+//        $this->load->view($this->_container, $data);
+//    }
+//
+//    public function register(){
+//        if ($this->ion_auth->logged_in() || $this->ion_auth->is_admin())
+//        {
+//            redirect('auth', 'refresh');
+//        }
+//        $this->form_validation->set_rules('first_name', 'First Name', 'required', 'trim');
+//        $this->form_validation->set_rules('last_name', 'Last Name', 'required', 'trim');
+//        $this->form_validation->set_rules('email', 'E-mail', 'required|valid_email|is_unique[' . $tables['users'] . '.email]');
+//        $this->form_validation->set_rules('phone_number', 'Phone Number', 'required', 'trim');
+//        $this->form_validation->set_rules('username', 'Username', 'required');
+//        $this->form_validation->set_rules('password', 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[password_confirm]');
+//        $this->form_validation->set_rules('password_confirm', 'required');
+//    }
 }

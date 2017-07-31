@@ -1,9 +1,9 @@
 <?php
 
-class Migration_Past_Papers extends CI_Migration {
+class Migration_Pastpapers extends CI_Migration {
 
     public function up() {
-        $this->dbforge->drop_table('past_papers', TRUE);
+        $this->dbforge->drop_table('pastpapers', TRUE);
         $this->dbforge->add_field(array(
             'id' => array(
                 'type' => 'INT',
@@ -22,13 +22,17 @@ class Migration_Past_Papers extends CI_Migration {
                 'type' => 'VARCHAR',
                 'constraint' => 255,
             ),
+            'type' => array(
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ),
         ));
         $this->dbforge->add_key('id', TRUE);
-        $this->dbforge->create_table('past_papers');
+        $this->dbforge->create_table('pastpapers');
     }
 
     public function down() {
-        $this->dbforge->drop_table('past_papers');
+        $this->dbforge->drop_table('pastpapers');
     }
 
 }

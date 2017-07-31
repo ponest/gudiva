@@ -15,6 +15,10 @@ class Admin extends Admin_Controller
 
         $this->load->library(array('ion_auth', 'session', 'form_validation'));
         $this->load->helper(array('url'));
+
+        if(!$this->ion_auth->logged_in()){
+            $this->index();
+        }
     }
 
     public function index(){
