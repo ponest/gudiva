@@ -7,7 +7,7 @@ class Auth extends MY_Controller {
 
         parent::__construct();
         $this->load->database();
-        $this->load->library(array('ion_auth', 'form_validation'));
+        $this->load->library(array('ion_auth', 'form_validation', 'session'));
         $this->load->helper(array('url', 'language'));
 
         $this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
@@ -39,8 +39,8 @@ class Auth extends MY_Controller {
                 $this->session->set_flashdata('message', $this->ion_auth->messages());
                 redirect('admin/dashboard', 'refresh');
             } else {
-                $this->session->set_flashdata('message', $this->ion_auth->errors());
-                redirect('admin', 'refresh');
+                $this->session->set_flashdata('message','Incorrect username or password entered. Please try again.');
+                redirect('auth/', 'refresh');
             }
         } else {
             $this->session->set_flashdata('message', $this->ion_auth->errors());
@@ -54,12 +54,8 @@ class Auth extends MY_Controller {
     }
 
     public function logout(){
-	    if ($this->ion_auth->is_admin()){
-            $this->ion_auth->logout();
-            redirect('admin');
-        }
 	    $this->ion_auth->logout();
-	    redirect('auth', 'refresh');
+	    redirect('auth/', 'refresh');
     }
 
 //    public function signup(){

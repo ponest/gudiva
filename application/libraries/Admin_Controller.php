@@ -14,7 +14,7 @@ class Admin_Controller extends MY_Controller {
         $this->load->library(array('ion_auth'));
 
         if (!$this->ion_auth->logged_in()) {
-            $this->load->view('admin/login_admin');
+            redirect('/auth/', 'refresh');
         }
 
         $this->is_admin = $this->ion_auth->is_admin();
@@ -22,6 +22,3 @@ class Admin_Controller extends MY_Controller {
         $this->logged_in_name = $user->first_name." ".$user->last_name;
     }
 }
-
-/* End of Admin_controller.php */
-/* Location: ./application/libraries/Admin_controller.php */
