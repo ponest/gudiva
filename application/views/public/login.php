@@ -17,7 +17,7 @@
                             <div class="row">
                                 <div class="center-block">
                                     <img class="profile-img img-rounded img-responsive"
-                                         src="../assets/images/User3.png" alt="" >
+                                         src="<?= base_url() ?>assets/images/User3.png" alt="" >
                                 </div>
                             </div>
                             <div class="row">

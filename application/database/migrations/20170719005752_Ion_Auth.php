@@ -11,7 +11,7 @@ class Migration_Ion_Auth extends CI_Migration {
         $this->dbforge->add_field(array(
             'id' => array(
                 'type' => 'INT',
-                'constraint' => 11,
+                'constraint' => '11',
                 'auto_increment' => TRUE
             ),
             'name' => array(
@@ -23,8 +23,24 @@ class Migration_Ion_Auth extends CI_Migration {
                 'constraint' => '100',
             )
         ));
+
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->create_table('groups');
+        // Dumping data for table 'groups'
+        $data = array(
+            array(
+                'id' => '1',
+                'name' => 'admin',
+                'description' => 'Administrator'
+            ),
+            array(
+                'id' => '2',
+                'name' => 'student',
+                'description' => 'Student'
+            )
+        );
+        $this->db->insert_batch('groups', $data);
+
 
         //Drop table 'users' if it exists
         $this->dbforge->drop_table('users', TRUE);
@@ -33,8 +49,8 @@ class Migration_Ion_Auth extends CI_Migration {
         $this->dbforge->add_field(
             array(
                 'id' => array(
-                    'type' => 'VARCHAR',
-                    'constraint' => '8',
+                    'type' => 'MEDIUMINT',
+                    'constraint' => '11',
                     'auto_increment' => TRUE
                 ),
                 'first_name' => array(
@@ -114,6 +130,25 @@ class Migration_Ion_Auth extends CI_Migration {
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->create_table('users');
 
+        // Dumping data for table 'users'
+        $data = array(
+            'id' => '1',
+            'first_name' => 'Gudiva',
+            'last_name' => 'Admin',
+            'email' => 'admin@admin.com',
+            'phone' => '0000000000',
+            'username' => 'admin',
+            'password' => '$2y$08$uNpCGObYHRVrk3DK1wCtFeEFG89ZqQtxtO..yHibDb2UsXU1v9RZ6',
+            'salt' => '',
+            'activation_code' => '',
+            'forgotten_password_code' => NULL,
+            'created_on' => '1268889823',
+            'last_login' => '1268889823',
+            'ip_address' => '127.0.0.1',
+            'active' => '1',
+
+        );
+        $this->db->insert('users', $data);
 
         // Drop table 'users_groups' if it exists
         $this->dbforge->drop_table('users_groups', TRUE);
@@ -122,7 +157,7 @@ class Migration_Ion_Auth extends CI_Migration {
         $this->dbforge->add_field(array(
             'id' => array(
                 'type' => 'MEDIUMINT',
-                'constraint' => '8',
+                'constraint' => '11',
                 'unsigned' => TRUE,
                 'auto_increment' => TRUE
             ),
@@ -140,6 +175,20 @@ class Migration_Ion_Auth extends CI_Migration {
         $this->dbforge->add_key('id', TRUE);
         $this->dbforge->create_table('users_groups');
 
+        // Dumping data for table 'users_groups'
+        $data = array(
+            array(
+                'id' => '1',
+                'user_id' => '1',
+                'group_id' => '1',
+            ),
+            array(
+                'id' => '2',
+                'user_id' => '1',
+                'group_id' => '2',
+            )
+        );
+        $this->db->insert_batch('users_groups', $data);
 
         // Drop table 'login_attempts' if it exists
         $this->dbforge->drop_table('login_attempts', TRUE);
@@ -148,7 +197,7 @@ class Migration_Ion_Auth extends CI_Migration {
         $this->dbforge->add_field(array(
             'id' => array(
                 'type' => 'MEDIUMINT',
-                'constraint' => '8',
+                'constraint' => '11',
                 'unsigned' => TRUE,
                 'auto_increment' => TRUE
             ),

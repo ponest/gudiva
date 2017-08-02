@@ -17,15 +17,11 @@ class Admin extends Admin_Controller
         $this->load->helper(array('url'));
 
         if(!$this->ion_auth->logged_in()){
-            $this->index();
+            redirect('/auth/', 'refresh');
         }
     }
 
     public function index(){
-       $this->load->view('admin/login_admin');
-    }
-
-    public function dashboard(){
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."dashboard";
         $data['module'] = '';
         $this->load->view($this->_container, $data);

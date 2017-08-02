@@ -32,8 +32,7 @@ $route['new']='init/new_homepage';
 //$route['login_admin']='init/login_admin';
 
 /*================Admin=====================*/
-$route['admin'] = 'admin/admin';
-$route['admin/dashboard'] = 'admin/dashboard';
+$route['admin/dashboard'] = 'admin/admin';
 
 //------------Topics routes ------
 $route['admin/topics'] = 'admin/topics/topics_list';
