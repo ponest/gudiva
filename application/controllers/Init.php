@@ -87,5 +87,10 @@ Class Init extends CI_Controller
              $this->load->view('admin/tip_edit');
              $this->load->view('admin/footer');
     }
+    public function new_homepage(){
+             $this->load->view('new_homepage');
+    }
+
+
 
 }

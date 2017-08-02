@@ -27,6 +27,7 @@ $route['edu-tips']='init/tips';
 $route['past-papers']='init/past_papers';
 $route['admin/tip_view']='init/tip_view';
 $route['admin/tip_edit']='init/tip_edit';
+$route['new']='init/new_homepage';
 
 //$route['login_admin']='init/login_admin';
 
