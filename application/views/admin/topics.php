@@ -140,19 +140,23 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <label for="exampleInputFile">Upload Topic Image</label>
+                                    <label for="InputFile">Upload Topic Image</label>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="file" name="image" id="image" required>
+                                    <input type="file" name="userfile" id="image" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row" style="margin-right: 2px; margin-left: 2px;">
                             <div class="form-group">
-                                <textarea class="form-control" id="description" name="description" rows="2" placeholder="Description"></textarea>
+                                <label>Topic Summary</label>
+                                <textarea class="form-control" id="editor" name="description" rows="2" placeholder="Description"></textarea>
                             </div>
+                            <script>
+                                CKEDITOR.replace( 'editor' );
+                            </script>
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-info" type="submit" href="#">Submit</button>

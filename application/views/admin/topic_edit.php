@@ -6,11 +6,8 @@
                 <h3 class="page-header">
                     Edit Topic <small style="color: #a61717"><i><b><?= $topic->name; ?></b></i></small>
                 </h3>
-<!--                <button class="btn btn-info" data-target="#add_topic" data-toggle="modal"><i class="fa  fa-lg fa-plus-circle"></i>&nbsp;New Topic</button>-->
-                <hr>
             </div>
         </div>
-
     </div>
     <div class="row">
         <div class="col-lg-8">
@@ -68,27 +65,31 @@
                         <label>Description</label>
                         <textarea class="form-control" id="description" name="description" rows="5"><?= $topic->description; ?></textarea>
                     </div>
+                    <script>
+                        CKEDITOR.replace( 'description' );
+                    </script>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-info" type="submit">Update</button>
-                    <a href="<?= base_url('admin/topics/')?>"><button type="submit" class="btn btn-primary">Cancel</button></a>
                 </div>
             </form>
         </div>
         <div class="col-lg-4">
-            <div class="panel">
-                <div class="panel-header">
-                    <h3>Topic History</h3>
-                </div>
-                <div class="panel-body">
-                    <div>
-                        <label>Created On :</label>
-                        <?= $topic->date_created; ?>
-                    </div>
-                    <div>
-                        <label>Last Updated :</label>
-                        <?= $topic->date_updated; ?>
-                    </div>
+            <div class="col col-md-8">
+                <label>Options</label>
+                <div>
+                    <a href="<?= base_url('admin/topics')?>"><button class="btn btn-md btn-block btn-default">
+                            <i class="fa fa-arrow-left" ></i>&nbsp;Back to Topics
+                        </button>&nbsp;
+                    </a>
+                    <a href="<?= base_url('admin/topic/edit/').$topic->id ?>"><button class="btn btn-md btn-block btn-success">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;Edit
+                        </button>&nbsp
+                    </a>
+                    <a href="<?= base_url('admin/topic/delete/').$topic->id ?>"><button class="btn btn-md btn-block btn-danger">
+                            <i class="fa fa-trash-o"></i>&nbsp;Delete
+                        </button>&nbsp;
+                    </a>
                 </div>
             </div>
         </div>
