@@ -25,6 +25,7 @@
             </tr>
             </tfoot>
             <tbody>
+
             <tr>
                 <td>2013</td>
                 <td>Physics</td>
@@ -33,6 +34,32 @@
                     <a href="#">view</a>
                 </td>
             </tr>
+             <tr>
+                <td>2012</td>
+                <td>Kiswahili</td>
+                <td>form Two</td>
+                <td>
+                    <a href="#">view</a>
+                </td>
+            </tr>
+             <tr>
+                <td>2014</td>
+                <td>Biology</td>
+                <td>form one</td>
+                <td>
+                    <a href="#">view</a>
+                </td>
+            </tr>
+             <tr>
+                <td>2015</td>
+                <td>English</td>
+                <td>form three</td>
+                <td>
+                    <a href="#">view</a>
+                </td>
+            </tr>
+
+
             </tbody>
         </table>
     </div>

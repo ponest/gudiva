@@ -18,12 +18,12 @@
 
         <title>GUDIVA-Online Library</title>
         <link href="<?= base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="<?= base_url() ?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/admin/font-awesome/css/font-awesome.min.css" type="text/css">
         <link href="<?= base_url() ?>assets/css/index.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url() ?>assets/css/login.css" rel="stylesheet" type="text/css">
         <link href="<?= base_url() ?>assets/css/register.css" rel="stylesheet" type="text/css">
 <!--        <link href="assets/css/topics.css" rel="stylesheet" type="text/css">-->
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <style>

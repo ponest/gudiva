@@ -20,13 +20,16 @@
         <title>Student</title>
         <link href="<?= base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="<?= base_url()?>assets/css/admin/dataTables.bootstrap.min.css" rel="stylesheet">
-        <link href="<?= base_url()?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/admin/font-awesome/css/font-awesome.min.css" type="text/css">
         <link rel="stylesheet" href="<?= base_url()?>assets/css/index.css" type="text/css">
         <link rel="stylesheet" href="<?= base_url()?>assets/css/login.css" type="text/css">
         <link rel="stylesheet" href="<?= base_url()?>assets/css/past_papers.css" type="text/css">
         <link rel="stylesheet" href="<?= base_url()?>assets/css/topics.css" type="text/css">
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
         <style>
             a:hover{
                 text-decoration: none;

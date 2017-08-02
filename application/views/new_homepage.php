@@ -13,6 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="<?= base_url()?>assets/css/new_index.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/admin/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -77,73 +80,111 @@
 <div class="row third">
 
     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <div class="well">
-            <p>naijeeeeeeeeeeeeeeeeeeeeeee</p>
+            <img src="<?=base_url() ?>assets/images/Screenshot1.png" class="img-responsive img-thumbnail img-rounded">
         </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  side-text">
+            <h3>View "O" Level Topic as well as "A" Level Topics</h3>
+            <p>
+                Gudiva Online library provide  variety of Ordinary level and Advanced level topics and a student
+                will easily be able to Learning using Questions and answers format.
+            </p>
     </div>
 
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <div class="well">
-            <p>naijeeeeeeeeeeeeeeeeeeeeeee</p>
-        </div>
     </div>
 
-</div>
+
 
 <div class="row fourth">
 
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-        <div class="well">
             <div class="row">
-                <img class="img-circle img-responsive img-thumbnail" src="assets/images/organic.jpg" >
+                <img class="img-circle img-responsive" src="<?= base_url() ?>assets/images/forum.jpg" >
             </div>
-            <div class="row">
-                <p>Student Forum</p>
+            <div class="row text">
+                <h3>Student Forum</h3>
+                <p>Students can easily communicate and collaborate with one another</p>
             </div>
 
-        </div>
     </div>
 
  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-        <div class="well">
             <div class="row">
-                <img class="img-circle img-responsive img-thumbnail" src="assets/images/density.jpg" >
+                <img class="img-circle img-responsive" src="<?= base_url() ?>assets/images/tips.jpeg" >
             </div>
 
-            <div class="row">
-                <p>Educational Tips</p>
+            <div class="row text">
+                <h3>Educational Tips</h3>
+                <p> Students are able to view a number
+                    of educational tips which will assist them in improving their
+                    performances</p>
             </div>
-
-        </div>
     </div>
 
  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-        <div class="well">
             <div class="row">
-                <img class="img-circle img-responsive img-thumbnail" src="assets/images/organic.jpg" >
+                <img class="img-circle img-responsive" src="<?= base_url() ?>assets/images/responsive2.jpg" >
             </div>
 
-            <div class="row">
-                <p>Mobile Friend</p>
+            <div class="row text">
+                <h3>Mobile Friend</h3>
+                <p>
+                    Our fully responsive user interface seamlessly supports any screen. You can view it using your android phone,
+                    iPad, Laptop, Desktop and other Larger screens.
+                </p>
             </div>
-
-        </div>
     </div>
 
 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-        <div class="well">
             <div class="row">
-                <img class="img-circle img-responsive img-thumbnail" src="assets/images/organic.jpg" >
+                <img class="img-circle img-responsive" src="<?= base_url() ?>assets/images/userfriend.jpg" >
             </div>
 
-            <div class="row">
-                <p>User-Friendly Navigation
-                    WiZDOM v5 is designed to deliver learning with ease and minimum clicks!</p>
+            <div class="row text">
+                <h3>User-Friendly Navigation</h3>
+                    <p>Gudiva Online Library is designed to deliver learning with ease and minimum clicks!</p>
             </div>
+ </div>
 
-        </div>
+</div>
+
+<div class="row fifth">
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  side-text">
+        <h3>Provide Administrative functions</h3>
+        <p>
+            Gudiva Online library provide Administrator interface which will allow instructors to add topics, Questions,
+            past papers, educational tips. Also it support easy adding and deleting of users...
+        </p>
     </div>
 
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <img src="<?=base_url() ?>assets/images/Screenshot3.png" class="img-responsive img-thumbnail img-rounded">
+    </div>
+
+</div>
+
+<div class="row footer">
+
+    <div class="row">
+        <img class="img-thumbnail img-circle img-responsive" src="<?= base_url() ?>assets/images/logo.png">
+    </div>
+
+    <div class="row footer-icons">
+        <i class="fa fa-lg fa-facebook-square"></i>
+        <i class="fa fa-lg fa-instagram"></i>
+        <i class="fa fa-lg fa-twitter-square"></i>
+        <i class="fa fa-lg fa-google-plus-square"></i>
+        <i class="fa fa-lg fa-linkedin-square"></i>
+        <i class="fa fa-lg fa-youtube-square"></i>
+    </div>
+
+    <div class="row navigation_links">
+        <span>About Us</span>&nbsp;<span>Forum</span>&nbsp;<span>Contact Us</span>
+    </div>
+
+    <div class="row navigation_links">
+        <span>&copy GOL &nbsp; <?= date('Y') ?></span>&nbsp;|&nbsp;<span>Made In Tanzania</span>&nbsp; Tel : 0655-151924
+    </div>
 
 
 </div>
@@ -160,26 +201,3 @@
 <script src="<?= base_url()?>assets/js/bootstrap.min.js"></script>
 
 </html>
-
-
-
-Available anytime, anywhere
-
-Our truly mobile service allows access from any modern online device - Mac, PC,
-tablet or smartphone. You can create an entire course on your tablet, preview any
-course file (including MS Office) in a browser, and complete a quiz on your smartphone.
-
-
-Online Learning. Simplified.
-LearnUpon is a powerful Learning Management System that instantly simplifies online learning.
-
-
-Mobile Friendly, From the Start
-
-Our fully responsive user interface seamlessly supports any screen. If you author your SCORM
-content using HTML5, your courses will play on Apple devices just fine!
-
-Enable students to connect with each other
-
-Students can easily communicate and collaborate on projects using wikis, blogs,
-chats, forums, and groups, which helps them stay focused and excited.
