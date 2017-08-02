@@ -11,7 +11,7 @@ class Questions extends Admin_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model(array('admin/question'));
+        $this->load->model(array('admin/question', 'admin/topic'));
         $this->load->helper(array('form', 'url'));
         $this->load->library(array('session'));
     }
@@ -19,7 +19,9 @@ class Questions extends Admin_Controller
     public function questions_list()
     {
         $questions = $this->question->get_all();
-        $data['questions'] = '';
+        $topics = $this->topic->get_all();
+        $data['questions'] = $questions;
+        $data['topics'] = $topics;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."questions";
 
         $this->load->view($this->_container, $data);
