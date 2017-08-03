@@ -150,15 +150,15 @@
 <div class="row fifth">
 
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  side-text">
-        <h3>Provide Administrative functions</h3>
+        <h3>Provide Past Papers</h3>
         <p>
-            Gudiva Online library provide Administrator interface which will allow instructors to add topics, Questions,
-            past papers, educational tips. Also it support easy adding and deleting of users...
+            Gudiva Online library provide A list of past papers for both ordinary level and advanced level and also enable a
+            student to view the questions...
         </p>
     </div>
 
     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <img src="<?=base_url() ?>assets/images/Screenshot3.png" class="img-responsive img-thumbnail img-rounded">
+        <img src="<?=base_url() ?>assets/images/Screenshot2.png" class="img-responsive img-thumbnail img-rounded">
     </div>
 
 </div>
