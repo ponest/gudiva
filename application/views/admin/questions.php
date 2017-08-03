@@ -28,9 +28,9 @@
 <div class="row pg-header" >
     <div class="col-lg-12">
         <h1 class="page-header">
-            Questions<small>Overview</small>
+            Questions <small>Overview</small>
         </h1>
-        <button class="btn btn-info" data-target="#add_topic" data-toggle="modal"><i class="fa  fa-lg fa-plus-circle"></i>&nbsp;New Topic</button>
+        <button class="btn btn-info" data-target="#add_topic" data-toggle="modal"><i class="fa  fa-lg fa-plus-circle"></i>&nbsp;New Question</button>
         <?php if ($this->session->flashdata('success_msg')):?>
             <span class="alert alert-success">
                 <span class="fa fa-lg fa-check"></span> <strong>Success : </strong><?= $this->session->flashdata('success_msg');?>
@@ -44,7 +44,7 @@
 
 <div class="row" style="margin-right: 10px; margin-left: 10px">
 
-    <table class="table table-striped table-responsive table-bordered table-hover" id="mydata">
+    <table class="table table-striped table-responsive table-bordered table-hover table-condensed" id="mydata">
         <thead>
         <tr>
             <th>ID</th>
@@ -72,15 +72,18 @@
                     <?php endif;?>
                 <?php endforeach;?>
                 <td>
-                    <a href="<?= base_url('admin/question/view/').$question->id ?>"><button class="btn btn-sm btn-primary">
+                    <a href="<?= base_url('admin/question/view/').$question->id ?>"><button class="btn btn-xs btn-primary">
                             <i class="fa fa-eye" ></i>&nbsp;View
-                        </button>&nbsp;</a>
-                    <a href="<?= base_url('admin/question/edit/').$question->id ?>"><button class="btn btn-sm btn-success">
+                        </button>&nbsp;
+                    </a>
+                    <a href="<?= base_url('admin/question/edit/').$question->id ?>"><button class="btn btn-xs btn-success">
                             <i class="fa fa-pencil-square-o"></i>&nbsp;Edit
-                        </button>&nbsp</a>
-                    <a href="<?= base_url('admin/question/delete/').$question->id ?>"><button class="btn btn-sm btn-danger">
+                        </button>&nbsp
+                    </a>
+                    <a href="<?= base_url('admin/question/delete/').$question->id ?>"><button class="btn btn-xs btn-danger">
                             <i class="fa fa-pencil-square-o"></i>&nbsp;Delete
-                        </button>&nbsp;</a>
+                        </button>&nbsp;
+                    </a>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -94,7 +97,7 @@
                 <!-- header-->
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2 class="modal-title" style="font-family: Cambria">Add Topic</h2>
+                    <h2 class="modal-title" style="font-family: Cambria">Add Question</h2>
                 </div>
                 <!-- body -->
                 <div class="modal-body">

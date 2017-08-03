@@ -77,13 +77,13 @@
                 <td><?= $topic->date_created ?></td>
                 <td><?= $topic->date_updated ?></td>
                 <td>
-                    <a href="<?= base_url('admin/topic/view/').$topic->id ?>"><button class="btn btn-sm btn-primary">
+                    <a href="<?= base_url('admin/topic/view/').$topic->id ?>"><button class="btn btn-xs btn-primary">
                         <i class="fa fa-eye" ></i>&nbsp;View
                     </button>&nbsp;</a>
-                    <a href="<?= base_url('admin/topic/edit/').$topic->id ?>"><button class="btn btn-sm btn-success">
+                    <a href="<?= base_url('admin/topic/edit/').$topic->id ?>"><button class="btn btn-xs btn-success">
                         <i class="fa fa-pencil-square-o"></i>&nbsp;Edit
                     </button>&nbsp</a>
-                    <a href="<?= base_url('admin/topic/delete/').$topic->id ?>"><button class="btn btn-sm btn-danger">
+                    <a href="<?= base_url('admin/topic/delete/').$topic->id ?>"><button class="btn btn-xs btn-danger">
                        <i class="fa fa-pencil-square-o"></i>&nbsp;Delete
                     </button>&nbsp;</a>
                 </td>

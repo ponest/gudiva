@@ -13,13 +13,13 @@ class Tips extends Admin_Controller
         parent::__construct();
         $this->load->model(array('admin/tip'));
         $this->load->helper(array('form', 'url'));
-        $this->load->library(array('session'));
+        $this->load->library(array('session','form_validation'));
     }
 
     public function tips_list()
     {
         $tips = $this->tip->get_all();
-        $data['tips'] = '';
+        $data['tips'] = $tips;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."tips";
 
         $this->load->view($this->_container, $data);
@@ -27,9 +27,15 @@ class Tips extends Admin_Controller
 
     public function create()
     {
-        if ($this->input->post('tip'))
+        $this->form_validation->set_rules('title', 'Title', 'required');
+        $this->form_validation->set_rules('tip', 'Tip', 'required');
+        $this->form_validation->set_rules('author', 'Auther');
+
+        if ($this->form_validation->run() == TRUE)
         {
+            $data['title'] =  $this->input->post('title');
             $data['tip'] =  $this->input->post('tip');
+            $data['author'] =  $this->input->post('author');
 
             if($this->tip->insert($data)){
                 $this->session->set_flashdata('success_msg', 'Tip added successfully');

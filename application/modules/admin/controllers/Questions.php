@@ -45,8 +45,10 @@ class Questions extends Admin_Controller
 
     public function view($id)
     {
-        $question = $this->question->get($id);
-        $data['question'] = $question;
+        $questions = $this->question->get($id);
+        $topic = $this->topic->get_all();
+        $data['questions'] = $questions;
+        $data['topic'] = $topic;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."question_view";
         $this->load->view($this->_container, $data);
     }
@@ -54,8 +56,10 @@ class Questions extends Admin_Controller
     public function edit($id)
     {
         $question = $this->question->get($id);
+        $topic = $this->topic->get_all();
 
         $data['question'] = $question;
+        $data['topics'] = $topic;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."question_edit";
         $this->load->view($this->_container, $data);
     }

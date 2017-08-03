@@ -10,21 +10,31 @@ class Migration_Pastpapers extends CI_Migration {
                 'constraint' => 11,
                 'auto_increment' => TRUE
             ),
-            'name' => array(
-                'type' => 'TEXT',
-                'constraint' => 255,
-            ),
-            'level' => array(
-                'type' => 'MEDIUMINT',
-                'constraint' => 11,
-            ),
             'year' => array(
                 'type' => 'VARCHAR',
                 'constraint' => 255,
             ),
-            'type' => array(
+            'subject' => array(
                 'type' => 'VARCHAR',
                 'constraint' => 255,
+            ),
+            'level' => array(
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ),
+            'questions' => array(
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ),
+            'answers' => array(
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ),
+            'date_created' => array(
+                'type' => 'DATETIME',
+            ),
+            'date_updated' => array(
+                'type' => 'DATETIME',
             ),
         ));
         $this->dbforge->add_key('id', TRUE);
