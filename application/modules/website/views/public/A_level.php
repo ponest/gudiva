@@ -33,7 +33,7 @@
                         <div class="row lower-part">
                             <h4><?= $topic->name; ?></h4>
                             <p><?= word_limiter($topic->description, 4);?></p>
-                            <a href="start-topic"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
+                            <a href="<?= base_url('A_level_topics/topic/'). $topic->id?>"><button class="btn btn-default pull-left start_btn">Start Topic</button> </a>
                         </div>
                     </div>
                 </div>

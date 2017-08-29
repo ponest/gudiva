@@ -9,7 +9,7 @@ class Website extends MY_Controller
 {
     function __construct() {
         parent::__construct();
-        $this->load->model(array('topic', 'pastpaper'));
+        $this->load->model(array('topic', 'pastpaper', 'question'));
         $this->load->helper(array('url', 'text'));
     }
 
