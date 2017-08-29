@@ -22,6 +22,7 @@ class Topics extends Admin_Controller
 
         $data['topics'] = $topics;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."topics";
+        $data['module'] = 'admin';
 
         $this->load->view($this->_container, $data);
         //var_dump($data);
@@ -70,6 +71,7 @@ class Topics extends Admin_Controller
         $data['topic'] = $topic;
         $data['questions'] = $questions;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."topic_view";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
     public function edit($id)
@@ -78,6 +80,7 @@ class Topics extends Admin_Controller
 
         $data['topic'] = $topic;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."topic_edit";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 

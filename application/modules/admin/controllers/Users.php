@@ -19,6 +19,7 @@ class Users extends Admin_Controller {
 
         $data['users'] = $users;
         $data['page'] = $this->config->item('gudiva_template_dir_admin') . "users_list";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 
@@ -54,6 +55,7 @@ class Users extends Admin_Controller {
 
         $data['groups'] = $this->ion_auth->groups()->result();
         $data['page'] = $this->config->item('gudiva_template_dir_admin') . "users_create";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 
@@ -79,6 +81,7 @@ class Users extends Admin_Controller {
         $data['user'] = $this->ion_auth->user($id)->row();
         $data['user_group'] = $this->ion_auth->get_users_groups($id)->row();
         $data['page'] = $this->config->item('gudiva_template_dir_admin') . "users_edit";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 

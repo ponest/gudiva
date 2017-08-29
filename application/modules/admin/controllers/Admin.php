@@ -23,7 +23,7 @@ class Admin extends Admin_Controller
 
     public function index(){
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."dashboard";
-        $data['module'] = '';
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 }

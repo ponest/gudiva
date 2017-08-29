@@ -143,8 +143,8 @@
                                 <div class="form-group">
                                     <select class="selectpicker show-tick form-control input-md" name="level" id="subject" placeholder="Subject" required>
                                         <option value="" disabled selected>Select class level</option>
-                                        <option value="O' level">O' level</option>
-                                        <option value="A' level">A' level</option>
+                                        <option value="0">O' level</option>
+                                        <option value="1' level">A' level</option>
                                     </select>
                                 </div>
                             </div>

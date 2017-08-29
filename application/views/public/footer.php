@@ -1,9 +1,9 @@
-        <div class="row">
-            <div id="footer">
-                <p>Gudiva &nbsp; &copy; <?php  echo date("Y") ?></p>
-            </div>
-        </div>
-        <script src="<?= base_url() ?>assets/js/jquery.js"></script>
-        <script src="<?= base_url() ?>assets/js/bootstrap.min.js"></script>
-    </body>
+<script src="<? base_url()?>assets/js/jquery.js"></script>
+<script src="<? base_url()?>assets/js/bootstrap.min.js"></script>
+<script src="<? base_url()?>assets/js/admin/jquery.dataTables.min.js"></script>
+<script src="<? base_url()?>assets/js/admin/dataTables.bootstrap.min.js"></script>
+<script>
+    $('#mydata').dataTable();
+</script>
+</body>
 </html>

@@ -21,7 +21,7 @@ class Pastpapers extends Admin_Controller
         $pastpapers = $this->pastpaper->get_all();
         $data['pastpapers'] = $pastpapers;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."past_papers";
-
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 
@@ -75,6 +75,7 @@ class Pastpapers extends Admin_Controller
         $pastpaper = $this->pastpaper->get($id);
         $data['pastpaper'] = $pastpaper;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."pastpaper_view";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 
@@ -84,6 +85,7 @@ class Pastpapers extends Admin_Controller
 
         $data['pastpaper'] = $pastpaper;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."pastpaper_edit";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 

@@ -19,6 +19,7 @@ class UserGroups extends Admin_Controller {
 
         $data['groups'] = $groups;
         $data['page'] = $this->config->item('gudiva_template_dir_admin') . "groups_list";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 
@@ -39,6 +40,7 @@ class UserGroups extends Admin_Controller {
             }
         }
         $data['page'] = $this->config->item('gudiva_template_dir_admin') . "groups_create";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 
@@ -56,6 +58,7 @@ class UserGroups extends Admin_Controller {
 
         $data['group'] = $group;
         $data['page'] = $this->config->item('gudiva_template_dir_admin') . "groups_edit";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 

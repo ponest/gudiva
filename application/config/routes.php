@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller'] = 'init';
+$route['default_controller'] = 'website';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
@@ -12,22 +12,26 @@ $route['auth/logout'] = 'auth/logout';
 $route['auth/signup']='auth/signup';
 $route['auth/register'] = 'auth/register';
 
-/*===============INIT================*/
+/*===============Website================*/
 
-$route['olevel']='init/olevel_page';
-$route['alevel']='init/alevel_page';
-$route['olevel_topics']='init/olevel_topics';
-$route['alevel_topics']='init/alevel_topics';
-$route['start-topic']='init/start_topic';
-$route['olevel_pp']='init/olevel_pp';
-$route['alevel_pp']='init/alevel_pp';
-$route['topics']='init/topics';
-$route['questions']='init/questions';
-$route['edu-tips']='init/tips';
-$route['past-papers']='init/past_papers';
-$route['admin/tip_view']='init/tip_view';
-$route['admin/tip_edit']='init/tip_edit';
-$route['new']='init/new_homepage';
+$route['home'] = 'website/';
+$route['O_level_topics']='website/O_level_topics/';
+$route['A_level_topics']='website/A_level_topics/';
+$route['O_level_past_papers']='website/O_level_past_papers/';
+$route['A_level_past_papers']='website/A_level_past_papers/';
+//$route['alevel']='init/alevel_page';
+//$route['olevel_topics']='init/olevel_topics';
+//$route['alevel_topics']='init/alevel_topics';
+//$route['start-topic']='init/start_topic';
+//$route['olevel_pp']='init/olevel_pp';
+//$route['alevel_pp']='init/alevel_pp';
+//$route['topics']='init/topics';
+//$route['questions']='init/questions';
+//$route['edu-tips']='init/tips';
+//$route['past-papers']='init/past_papers';
+//$route['admin/tip_view']='init/tip_view';
+//$route['admin/tip_edit']='init/tip_edit';
+//$route['new']='init/new_homepage';
 
 //$route['login_admin']='init/login_admin';
 

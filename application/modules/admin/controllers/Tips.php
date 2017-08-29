@@ -21,6 +21,7 @@ class Tips extends Admin_Controller
         $tips = $this->tip->get_all();
         $data['tips'] = $tips;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."tips";
+        $data['module'] = 'admin';
 
         $this->load->view($this->_container, $data);
     }
@@ -49,6 +50,7 @@ class Tips extends Admin_Controller
         $tip = $this->tip->get($id);
         $data['tip'] = $tip;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."tip_view";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 
@@ -58,6 +60,7 @@ class Tips extends Admin_Controller
 
         $data['tip'] = $tip;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."tip_edit";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 

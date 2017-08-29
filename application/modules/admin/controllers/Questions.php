@@ -23,6 +23,7 @@ class Questions extends Admin_Controller
         $data['questions'] = $questions;
         $data['topics'] = $topics;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."questions";
+        $data['module'] = 'admin';
 
         $this->load->view($this->_container, $data);
     }
@@ -50,6 +51,7 @@ class Questions extends Admin_Controller
         $data['questions'] = $questions;
         $data['topic'] = $topic;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."question_view";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 
@@ -61,6 +63,7 @@ class Questions extends Admin_Controller
         $data['question'] = $question;
         $data['topics'] = $topic;
         $data['page'] = $this->config->item('gudiva_template_dir_admin')."question_edit";
+        $data['module'] = 'admin';
         $this->load->view($this->_container, $data);
     }
 
