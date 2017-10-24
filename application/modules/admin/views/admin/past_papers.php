@@ -75,7 +75,7 @@
                 <td><?= $pastpaper->level?></td>
                 <td>
                     <a href="<?= base_url()?>assets/uploads/pastpapers/questions/<?=$pastpaper->questions?>" >Questions</a>
-                    |<a href="<?= base_url()?>assets/uploads/pastpapers/answers/<?=$pastpaper->questions?>" >Solutions</a>
+                    |<a href="<?= base_url()?>assets/uploads/pastpapers/answers/<?=$pastpaper->answers?>" >Solutions</a>
                 </td>
                 <td>
                     <a href="<?= base_url('admin/pastpaper/view/').$pastpaper->id ?>"><button class="btn btn-xs btn-primary">

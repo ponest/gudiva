@@ -35,7 +35,11 @@
                             </tr>
                             <tr>
                                 <td><strong>Class Level:</strong></td>
-                                <td><?= $topic->level ?></td>
+                                <td><?php  if ($topic->level == 0){
+                                    echo "O Level";
+                                    } else{
+                                            echo "A Level";
+                                    } ?></td>
                             </tr>
                             <tr>
                                 <td><strong>Created on:</strong></td>

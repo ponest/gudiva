@@ -18,10 +18,10 @@ class Auth extends MY_Controller {
         if($this->ion_auth->logged_in()){
             redirect('admin/dashboard', 'refresh');
         } else {
-            $data['page'] = "admin/login";
-            $data['module'] = 'admin';
+           /* $data['page'] = "admin/login";
+            $data['module'] = 'admin';*/
 
-            $this->load->view($this->_container, $data);
+            $this->load->view('admin/admin/login');
         }
 	}
 
@@ -45,11 +45,11 @@ class Auth extends MY_Controller {
         } else {
             $this->session->set_flashdata('message', $this->ion_auth->errors());
             (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-
+/*
             $data['page'] = $this->config->item('gudiva_template_dir_admin'). "login";
-            $data['module'] = 'admin';
+            $data['module'] = 'admin';*/
 
-            $this->load->view($this->_container, $data);
+            $this->load->view('admin/admin/login');
         }
     }
 

@@ -12,22 +12,20 @@
     <title>Admin</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?= base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?= base_url() ?>assets/css/admin/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url("assets/css/bootstrap.min.css") ?>" rel="stylesheet">
+    <link href="<?= base_url("assets/css/admin/dataTables.bootstrap.min.css") ?>" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?= base_url() ?>assets/css/admin/sb-admin.css" rel="stylesheet">
+    <link href="<?= base_url("assets/css/admin/sb-admin.css") ?>" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="<?= base_url() ?>assets/css/admin/plugins/morris.css" rel="stylesheet">
+    <link href="<?= base_url("assets/css/admin/plugins/morris.css") ?>" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/admin/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="<?= base_url("assets/fonts/admin/font-awesome/css/font-awesome.min.css") ?>" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <script src="<?= base_url() ?>assets/js/ckeditor/ckeditor.js"></script>
-    <link rel="stylesheet" href="<?= base_url() ?>assets/js/toolbarconfigurator/lib/codemirror/neo.css">
+    <script src="<?= base_url("assets/js/ckeditor/ckeditor.js") ?>"></script>
+    <link rel="stylesheet" href="<?= base_url("assets/js/toolbarconfigurator/lib/codemirror/neo.css") ?>">
 
 </head>
 
@@ -54,7 +52,6 @@
                 <ul class="dropdown-menu">
                     <li>
                         <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                    </li>
                     </li>
                     <li class="divider"></li>
                     <li>

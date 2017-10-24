@@ -1,4 +1,24 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: kilenga
+ * Date: 7/17/17
+ * Time: 8:33 AM
+ */?>
+<!doctype html>
+<html lang="En-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Gudiva Online Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?= base_url("assets/css/lumen.min.css")?>" type="text/css">
+    <link rel="stylesheet" href="<?= base_url("assets/css/new_index.css")?>" type="text/css">
+    <link rel="stylesheet" href="<?= base_url("assets/fonts/admin/font-awesome/css/font-awesome.min.css") ?>" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+</head>
+
+<body>
 <div id="second-row">
     <img src="<?= base_url()?>assets/images/student1.jpg">
     <div class=" row center_contents">
@@ -97,3 +117,31 @@
 
 </div>
 
+<div class="row footer">
+
+    <div class="row">
+        <img class="img-thumbnail img-circle img-responsive" src="<?= base_url() ?>assets/images/logo.png">
+    </div>
+
+    <div class="row footer-icons">
+        <i class="fa fa-lg fa-facebook-square"></i>
+        <i class="fa fa-lg fa-instagram"></i>
+        <i class="fa fa-lg fa-twitter-square"></i>
+        <i class="fa fa-lg fa-google-plus-square"></i>
+        <i class="fa fa-lg fa-linkedin-square"></i>
+        <i class="fa fa-lg fa-youtube-square"></i>
+    </div>
+
+    <div class="row navigation_links">
+        <span>About Us</span>&nbsp;<span>Forum</span>&nbsp;<span>Contact Us</span>
+    </div>
+
+    <div class="row navigation_links">
+        <span>&copy GOL &nbsp; <?= date('Y') ?></span>&nbsp;|&nbsp;<span>Made In Tanzania</span>&nbsp; Tel : 0655-151924
+    </div>
+
+
+</div>
+
+</body>
+</html>
